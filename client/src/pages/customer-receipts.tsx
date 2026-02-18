@@ -32,7 +32,7 @@ export default function CustomerReceiptsPage() {
     const [selectedReceipt, setSelectedReceipt] = useState<any>(null);
 
     const { data: receipts, isLoading } = useQuery<any>({
-        queryKey: ["/api/flow/receipts"],
+        queryKey: ["/api/customer/receipts", { customerId: user?.id }],
     });
 
     const filteredReceipts = receipts?.data?.filter((rec: any) => {

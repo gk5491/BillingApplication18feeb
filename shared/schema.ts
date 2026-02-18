@@ -132,6 +132,7 @@ export const emailLogSchema = z.object({
 
 export type EmailLog = z.infer<typeof emailLogSchema>;
 
+// Customer Communication Preferences
 export const customerCommunicationPreferencesSchema = z.object({
   invoiceReminders: z.boolean().default(false),
   recurringInvoiceAutoEmail: z.boolean().default(false),
@@ -140,3 +141,24 @@ export const customerCommunicationPreferencesSchema = z.object({
 });
 
 export type CustomerCommunicationPreferences = z.infer<typeof customerCommunicationPreferencesSchema>;
+
+// Customer Receipts (Shared with Customer)
+export const customerReceipts = pgTable("customer_receipts", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  paymentId: varchar("payment_id").notNull(),
+  customerId: varchar("customer_id").notNull(),
+  paymentNumber: text("payment_number").notNull(),
+  amount: decimal("amount", { precision: 12, scale: 2 }).notNull(),
+  date: text("date").notNull(),
+  status: text("status").notNull().default("received"),
+  pdfUrl: text("pdf_url"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const insertCustomerReceiptSchema = createInsertSchema(customerReceipts).omit({
+  id: true,
+  createdAt: true,
+});
+
+export type InsertCustomerReceipt = z.infer<typeof insertCustomerReceiptSchema>;
+export type CustomerReceipt = typeof customerReceipts.$inferSelect;

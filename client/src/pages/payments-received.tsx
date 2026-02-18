@@ -269,6 +269,39 @@ function PaymentDetailPanel({
               </DropdownMenuContent>
             </DropdownMenu>
 
+            <Button
+              variant="outline"
+              className="h-9 px-3 gap-2 rounded-md border-blue-200 bg-blue-50 hover:bg-blue-100 shadow-sm transition-all text-blue-700 font-medium"
+              onClick={async () => {
+                const status = (payment as any).status?.toLowerCase();
+                const isVerified = status === "verified" || status === "paid";
+                if (!isVerified) {
+                  toast({
+                    title: "Action Required",
+                    description: "Please verify the payment first before sending to customer.",
+                    variant: "destructive"
+                  });
+                  return;
+                }
+                try {
+                  const response = await fetch(`/api/payments-received/${payment.id}/send-to-customer`, {
+                    method: 'POST'
+                  });
+                  const data = await response.json();
+                  if (data.success) {
+                    toast({ title: "Success", description: "Payment receipt sent to customer's receipts section." });
+                  } else {
+                    toast({ title: "Error", description: data.message, variant: "destructive" });
+                  }
+                } catch (error) {
+                  toast({ title: "Error", description: "Failed to send to customer", variant: "destructive" });
+                }
+              }}
+            >
+              <Send className="h-4 w-4" />
+              <span>Send to Customer</span>
+            </Button>
+
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button variant="outline" size="icon" className="h-9 w-9 rounded-md border-slate-200 hover:bg-slate-50 shadow-sm transition-all" onClick={onRefund}>
@@ -358,9 +391,36 @@ function PaymentDetailPanel({
                 </div>
                 <div>
                   <p className="text-sm text-slate-500">Status</p>
-                  <Badge variant="outline" className="text-green-600 border-green-200 bg-green-50">
-                    {(payment as any).status}
-                  </Badge>
+                  <Select
+                    defaultValue={payment.status}
+                    onValueChange={async (val) => {
+                      try {
+                        const response = await fetch(`/api/payments-received/${payment.id}/status`, {
+                          method: 'PATCH',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ status: val })
+                        });
+                        const data = await response.json();
+                        if (data.success) {
+                          toast({ title: "Success", description: "Payment status updated" });
+                          fetchPayments();
+                        } else {
+                          toast({ title: "Error", description: data.message, variant: "destructive" });
+                        }
+                      } catch (error) {
+                        toast({ title: "Error", description: "Failed to update status", variant: "destructive" });
+                      }
+                    }}
+                  >
+                    <SelectTrigger className="h-8 w-[140px] mt-1">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Received">Received</SelectItem>
+                      <SelectItem value="Verified">Verified</SelectItem>
+                      <SelectItem value="Not Received">Not Received</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
               </div>
 

@@ -18,6 +18,10 @@ export interface IStorage {
   getEmailLogs(): EmailLog[];
   addEmailLog(log: EmailLog): void;
 
+  // Customer Receipts
+  getCustomerReceipts(customerId: string): Promise<CustomerReceipt[]>;
+  addCustomerReceipt(receipt: InsertCustomerReceipt): Promise<CustomerReceipt>;
+
   // Bank Accounts
   getBankAccounts(): Promise<BankAccount[]>;
   createBankAccount(account: InsertBankAccount): Promise<BankAccount>;
@@ -127,6 +131,32 @@ export class MemStorage implements IStorage {
 
   addEmailLog(log: EmailLog): void {
     this.emailLogs.push(log);
+  }
+
+  async getCustomerReceipts(customerId: string): Promise<CustomerReceipt[]> {
+    const receiptsFile = path.join(DATA_DIR, "customerReceipts.json");
+    if (!fs.existsSync(receiptsFile)) return [];
+    const data = JSON.parse(fs.readFileSync(receiptsFile, "utf-8"));
+    return (data.receipts || []).filter((r: any) => r.customerId === customerId).map((r: any) => ({
+      ...r,
+      createdAt: new Date(r.createdAt)
+    }));
+  }
+
+  async addCustomerReceipt(insertReceipt: InsertCustomerReceipt): Promise<CustomerReceipt> {
+    const receiptsFile = path.join(DATA_DIR, "customerReceipts.json");
+    let receipts: any[] = [];
+    if (fs.existsSync(receiptsFile)) {
+      receipts = JSON.parse(fs.readFileSync(receiptsFile, "utf-8")).receipts || [];
+    }
+    const newReceipt: CustomerReceipt = {
+      ...insertReceipt,
+      id: randomUUID(),
+      createdAt: new Date(),
+    };
+    receipts.push(newReceipt);
+    fs.writeFileSync(receiptsFile, JSON.stringify({ receipts }, null, 2));
+    return newReceipt;
   }
 
   async getBankAccounts(): Promise<BankAccount[]> {
