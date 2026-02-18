@@ -273,8 +273,8 @@ function PaymentDetailPanel({
               variant="outline"
               className="h-9 px-3 gap-2 rounded-md border-blue-200 bg-blue-50 hover:bg-blue-100 shadow-sm transition-all text-blue-700 font-medium"
               onClick={async () => {
-                const status = (payment as any).status?.toLowerCase();
-                const isVerified = status === "verified" || status === "paid";
+                const statusLower = (payment.status || "").toLowerCase();
+                const isVerified = statusLower === "verified" || statusLower === "paid";
                 if (!isVerified) {
                   toast({
                     title: "Action Required",

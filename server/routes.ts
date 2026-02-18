@@ -7095,8 +7095,9 @@ export async function registerRoutes(
         return res.status(404).json({ success: false, message: "Payment not found" });
       }
 
-      // Special check: if it's already verified, we allow sending
-      const isVerified = payment.status === "Verified" || payment.status === "paid" || payment.status === "Verified";
+      // Special check: if it's already verified or paid, we allow sending
+      const statusLower = (payment.status || "").toLowerCase();
+      const isVerified = statusLower === "verified" || statusLower === "paid";
 
       if (!isVerified) {
         return res.status(400).json({ success: false, message: "Payment must be verified before sending to customer" });
