@@ -1,4 +1,4 @@
-import { type User, type InsertUser, type EmailLog, type BankAccount, type InsertBankAccount } from "@shared/schema";
+import { type User, type InsertUser, type EmailLog, type BankAccount, type InsertBankAccount, type CustomerReceipt, type InsertCustomerReceipt } from "@shared/schema";
 import { randomUUID } from "crypto";
 import * as fs from "fs";
 import * as path from "path";
@@ -20,6 +20,7 @@ export interface IStorage {
 
   // Customer Receipts
   getCustomerReceipts(customerId: string): Promise<CustomerReceipt[]>;
+  getAllCustomerReceipts(): Promise<CustomerReceipt[]>;
   addCustomerReceipt(receipt: InsertCustomerReceipt): Promise<CustomerReceipt>;
 
   // Bank Accounts
@@ -134,13 +135,23 @@ export class MemStorage implements IStorage {
   }
 
   async getCustomerReceipts(customerId: string): Promise<CustomerReceipt[]> {
+    const receipts = await this.getAllCustomerReceipts();
+    return receipts.filter((r: any) => r.customerId === customerId);
+  }
+
+  async getAllCustomerReceipts(): Promise<CustomerReceipt[]> {
     const receiptsFile = path.join(DATA_DIR, "customerReceipts.json");
     if (!fs.existsSync(receiptsFile)) return [];
-    const data = JSON.parse(fs.readFileSync(receiptsFile, "utf-8"));
-    return (data.receipts || []).filter((r: any) => r.customerId === customerId).map((r: any) => ({
-      ...r,
-      createdAt: new Date(r.createdAt)
-    }));
+    try {
+      const data = JSON.parse(fs.readFileSync(receiptsFile, "utf-8"));
+      return (data.receipts || []).map((r: any) => ({
+        ...r,
+        createdAt: new Date(r.createdAt)
+      }));
+    } catch (e) {
+      console.error("Error reading receipts file:", e);
+      return [];
+    }
   }
 
   async addCustomerReceipt(insertReceipt: InsertCustomerReceipt): Promise<CustomerReceipt> {
@@ -150,7 +161,14 @@ export class MemStorage implements IStorage {
       receipts = JSON.parse(fs.readFileSync(receiptsFile, "utf-8")).receipts || [];
     }
     const newReceipt: CustomerReceipt = {
-      ...insertReceipt,
+      paymentId: insertReceipt.paymentId,
+      customerId: insertReceipt.customerId,
+      paymentNumber: insertReceipt.paymentNumber,
+      invoiceNumber: insertReceipt.invoiceNumber ?? null,
+      amount: insertReceipt.amount,
+      date: insertReceipt.date,
+      status: insertReceipt.status ?? "received",
+      pdfUrl: insertReceipt.pdfUrl ?? null,
       id: randomUUID(),
       createdAt: new Date(),
     };

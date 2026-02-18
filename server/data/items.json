@@ -101,6 +101,28 @@
       "organizationId": "1",
       "createdAt": "2026-02-18T04:25:40.829Z",
       "updatedAt": "2026-02-18T04:25:40.829Z"
+    },
+    {
+      "id": "1771395226932",
+      "name": "phone",
+      "description": "ajfa",
+      "type": "goods",
+      "usageUnit": "pcs",
+      "rate": "20000",
+      "purchaseRate": "25000",
+      "taxPreference": "taxable",
+      "intraStateTax": "GST18",
+      "interStateTax": "IGST18",
+      "isActive": true,
+      "organizationId": "1",
+      "createdAt": "2026-02-18T06:13:46.932Z",
+      "updatedAt": "2026-02-18T06:14:25.983Z",
+      "hsnSac": "",
+      "purchaseDescription": "",
+      "exemptionReason": "",
+      "salesAccount": "sales",
+      "purchaseAccount": "cost_of_goods",
+      "preferredVendor": ""
     }
   ]
 }

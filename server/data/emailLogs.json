@@ -1,3 +1,17 @@
 {
-  "logs": []
+  "logs": [
+    {
+      "id": "691moe5ea",
+      "customerId": "2",
+      "transactionId": "25",
+      "transactionType": "quote",
+      "type": "manual",
+      "status": "sent",
+      "subject": "Quote QT-000025 from Cybaem Tech",
+      "body": "Please find the attached quote QT-000025 for your review.",
+      "recipient": "customer@example.com",
+      "fromEmail": "ganesh.kale@cybaemtech.com",
+      "sentAt": "2026-02-18T06:24:04.122Z"
+    }
+  ]
 }

@@ -167,6 +167,7 @@ function PaymentDetailPanel({
   onDelete: () => void;
   onRefund: () => void;
   onSendReceipt: () => void;
+  onStatusChange?: (newStatus: string) => void;
 }) {
   const [showPdfView, setShowPdfView] = useState(true);
   const { toast } = useToast();
@@ -314,9 +315,9 @@ function PaymentDetailPanel({
                   const data = await response.json();
                   if (data.success) {
                     toast({ title: "Success", description: "Payment status updated" });
-                    // Immediately update local UI state via parent refresh functions
-                    fetchPayments(); 
-                    handlePaymentClick({ ...payment, status: val });
+                    if (onStatusChange) {
+                      onStatusChange(val);
+                    }
                   } else {
                     toast({ title: "Error", description: data.message, variant: "destructive" });
                   }
@@ -429,8 +430,8 @@ function PaymentDetailPanel({
                   <Badge variant="outline" className={cn(
                     "mt-1",
                     payment.status === 'Verified' || payment.status === 'PAID' ? "text-green-600 border-green-200 bg-green-50" :
-                    payment.status === 'Pending Verification' ? "text-yellow-600 border-yellow-200 bg-yellow-50" :
-                    "text-slate-600 border-slate-200 bg-slate-50"
+                      payment.status === 'Pending Verification' ? "text-yellow-600 border-yellow-200 bg-yellow-50" :
+                        "text-slate-600 border-slate-200 bg-slate-50"
                   )}>
                     {payment.status}
                   </Badge>
@@ -1014,6 +1015,10 @@ export default function PaymentsReceived() {
                   onDelete={() => handleDelete(selectedPayment.id)}
                   onRefund={handleRefund}
                   onSendReceipt={handleSendReceipt}
+                  onStatusChange={(val) => {
+                    fetchPayments();
+                    handlePaymentClick({ ...selectedPayment, status: val });
+                  }}
                 />
               </div>
             </ResizablePanel>

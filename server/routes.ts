@@ -7009,55 +7009,6 @@ export async function registerRoutes(
     }
   });
 
-  app.post("/api/payments-received/:id/send-to-customer", async (req, res) => {
-    try {
-      const paymentsReceivedData = readPaymentsReceivedData();
-      const payment = paymentsReceivedData.paymentsReceived.find((p: any) => p.id === req.params.id);
-
-      if (!payment) {
-        return res.status(404).json({ success: false, message: "Payment not found" });
-      }
-
-      if (payment.status !== "Verified") {
-        return res.status(400).json({ success: false, message: "Payment must be verified before sending to customer" });
-      }
-
-      const receipt: InsertCustomerReceipt = {
-        paymentId: payment.id,
-        customerId: payment.customerId,
-        paymentNumber: payment.paymentNumber,
-        amount: payment.amount.toString(),
-        date: payment.date,
-        status: "received",
-        pdfUrl: null
-      };
-
-      const savedReceipt = await storage.addCustomerReceipt(receipt);
-
-      res.json({
-        success: true,
-        message: "Payment receipt sent to customer",
-        data: savedReceipt
-      });
-    } catch (error) {
-      console.error('Error sending to customer:', error);
-      res.status(500).json({ success: false, message: "Failed to send receipt to customer" });
-    }
-  });
-
-  app.get("/api/customer/receipts", async (req, res) => {
-    try {
-      // In a real app, get customerId from session
-      const customerId = req.query.customerId as string;
-      if (!customerId) {
-        return res.status(400).json({ success: false, message: "Customer ID required" });
-      }
-      const receipts = await storage.getCustomerReceipts(customerId);
-      res.json({ success: true, data: receipts });
-    } catch (error) {
-      res.status(500).json({ success: false, message: "Failed to fetch receipts" });
-    }
-  });
 
   app.patch("/api/payments-received/:id/status", async (req, res) => {
     const { id } = req.params;
@@ -7065,20 +7016,20 @@ export async function registerRoutes(
     try {
       const paymentsReceivedData = readPaymentsReceivedData();
       const paymentIndex = paymentsReceivedData.paymentsReceived.findIndex((p: any) => p.id === id);
-      
+
       if (paymentIndex === -1) {
         return res.status(404).json({ success: false, message: "Payment not found" });
       }
-      
+
       paymentsReceivedData.paymentsReceived[paymentIndex].status = status;
       // Also update verified fields if moving to Verified
       if (status === 'Verified') {
         paymentsReceivedData.paymentsReceived[paymentIndex].verifiedAt = new Date().toISOString();
         paymentsReceivedData.paymentsReceived[paymentIndex].verifiedBy = "Admin";
       }
-      
+
       writePaymentsReceivedData(paymentsReceivedData);
-      
+
       res.json({ success: true, data: paymentsReceivedData.paymentsReceived[paymentIndex] });
     } catch (error: any) {
       console.error('Error updating status:', error);
@@ -7107,6 +7058,7 @@ export async function registerRoutes(
         paymentId: payment.id,
         customerId: payment.customerId,
         paymentNumber: payment.paymentNumber,
+        invoiceNumber: payment.invoices?.[0]?.invoiceNumber || null,
         amount: payment.amount.toString(),
         date: payment.date,
         status: "received",
@@ -7126,16 +7078,28 @@ export async function registerRoutes(
     }
   });
 
-  app.get("/api/customer/receipts", async (req, res) => {
+  app.get("/api/customer/receipts", authenticate, async (req, res) => {
     try {
-      // In a real app, get customerId from session
-      const customerId = req.query.customerId as string;
-      if (!customerId) {
-        return res.status(400).json({ success: false, message: "Customer ID required" });
+      const user = (req as any).user;
+      const customersData = readCustomersData();
+
+      let linkedCustomers = customersData.customers.filter((c: any) =>
+        (c.userId && String(c.userId) === String(user.id)) ||
+        (c.email && user.email && String(c.email).toLowerCase() === String(user.email).toLowerCase())
+      );
+
+      const customerIds = linkedCustomers.map((c: any) => String(c.id));
+
+      if (customerIds.length === 0) {
+        return res.json({ success: true, data: [] });
       }
-      const receipts = await storage.getCustomerReceipts(customerId);
-      res.json({ success: true, data: receipts });
+
+      const allReceipts = await storage.getAllCustomerReceipts(); // Need to add this to storage
+      const filteredReceipts = allReceipts.filter((r: any) => customerIds.includes(String(r.customerId)));
+
+      res.json({ success: true, data: filteredReceipts });
     } catch (error) {
+      console.error('Receipts fetch error:', error);
       res.status(500).json({ success: false, message: "Failed to fetch receipts" });
     }
   });

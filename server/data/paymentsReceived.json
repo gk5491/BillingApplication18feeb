@@ -364,13 +364,15 @@
       "notes": "Online payment recorded by customer for invoice INV-00019",
       "attachments": [],
       "sendThankYou": true,
-      "status": "Pending Verification",
+      "status": "Verified",
       "paymentType": "Customer Payment",
       "placeOfSupply": "",
       "descriptionOfSupply": "",
       "amountInWords": "",
       "journalEntries": [],
-      "createdAt": "2026-02-18T05:00:46.451Z"
+      "createdAt": "2026-02-18T05:00:46.451Z",
+      "verifiedAt": "2026-02-18T05:57:47.428Z",
+      "verifiedBy": "Admin"
     },
     {
       "id": "1771392769341",
@@ -397,14 +399,121 @@
       "notes": "Online payment recorded by customer for invoice INV-00019",
       "attachments": [],
       "sendThankYou": true,
-      "status": "PAID",
+      "status": "Received",
       "paymentType": "Customer Payment",
       "placeOfSupply": "",
       "descriptionOfSupply": "",
       "amountInWords": "",
       "journalEntries": [],
-      "createdAt": "2026-02-18T05:32:49.341Z"
+      "createdAt": "2026-02-18T05:32:49.341Z",
+      "verifiedAt": "2026-02-18T05:52:43.870Z",
+      "verifiedBy": "Admin"
+    },
+    {
+      "id": "1771394457843",
+      "paymentNumber": "PAY-97",
+      "date": "2026-02-18T06:00:57.843Z",
+      "referenceNumber": "INV-PAY-INV-00017",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "customerEmail": "",
+      "invoices": [
+        {
+          "id": "1771321533414",
+          "invoiceNumber": "INV-00017",
+          "amountApplied": 10000
+        }
+      ],
+      "mode": "Online",
+      "depositTo": "Undeposited Funds",
+      "amount": 10000,
+      "unusedAmount": 0,
+      "bankCharges": 0,
+      "tax": "None",
+      "taxAmount": 0,
+      "notes": "Online payment recorded by customer for invoice INV-00017",
+      "attachments": [],
+      "sendThankYou": true,
+      "status": "Verified",
+      "paymentType": "Customer Payment",
+      "placeOfSupply": "",
+      "descriptionOfSupply": "",
+      "amountInWords": "",
+      "journalEntries": [],
+      "createdAt": "2026-02-18T06:00:57.843Z",
+      "verifiedAt": "2026-02-18T06:01:14.139Z",
+      "verifiedBy": "Admin"
+    },
+    {
+      "id": "1771394504451",
+      "paymentNumber": "PAY-98",
+      "date": "2026-02-18T06:01:44.451Z",
+      "referenceNumber": "INV-PAY-INV-00003",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "customerEmail": "",
+      "invoices": [
+        {
+          "id": "1770715122801",
+          "invoiceNumber": "INV-00003",
+          "amountApplied": 460
+        }
+      ],
+      "mode": "Online",
+      "depositTo": "Undeposited Funds",
+      "amount": 460,
+      "unusedAmount": 0,
+      "bankCharges": 0,
+      "tax": "None",
+      "taxAmount": 0,
+      "notes": "Online payment recorded by customer for invoice INV-00003",
+      "attachments": [],
+      "sendThankYou": true,
+      "status": "Verified",
+      "paymentType": "Customer Payment",
+      "placeOfSupply": "27 - Maharashtra",
+      "descriptionOfSupply": "",
+      "amountInWords": "",
+      "journalEntries": [],
+      "createdAt": "2026-02-18T06:01:44.451Z",
+      "verifiedAt": "2026-02-18T06:02:01.881Z",
+      "verifiedBy": "Admin"
+    },
+    {
+      "id": "1771395631540",
+      "paymentNumber": "PAY-99",
+      "date": "2026-02-18T06:20:31.540Z",
+      "referenceNumber": "INV-PAY-INV-00020",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "customerEmail": "",
+      "invoices": [
+        {
+          "id": "1771395460960",
+          "invoiceNumber": "INV-00020",
+          "amountApplied": 20000
+        }
+      ],
+      "mode": "Online",
+      "depositTo": "Undeposited Funds",
+      "amount": 20000,
+      "unusedAmount": 0,
+      "bankCharges": 0,
+      "tax": "None",
+      "taxAmount": 0,
+      "notes": "Online payment recorded by customer for invoice INV-00020",
+      "attachments": [],
+      "sendThankYou": true,
+      "status": "Verified",
+      "paymentType": "Customer Payment",
+      "placeOfSupply": "",
+      "descriptionOfSupply": "",
+      "amountInWords": "",
+      "journalEntries": [],
+      "createdAt": "2026-02-18T06:20:31.540Z",
+      "verifiedAt": "2026-02-18T06:21:00.919Z",
+      "verifiedBy": "Admin"
     }
   ],
-  "nextPaymentNumber": 97
+  "nextPaymentNumber": 100
 }

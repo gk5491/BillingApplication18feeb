@@ -148,6 +148,7 @@ export const customerReceipts = pgTable("customer_receipts", {
   paymentId: varchar("payment_id").notNull(),
   customerId: varchar("customer_id").notNull(),
   paymentNumber: text("payment_number").notNull(),
+  invoiceNumber: text("invoice_number"),
   amount: decimal("amount", { precision: 12, scale: 2 }).notNull(),
   date: text("date").notNull(),
   status: text("status").notNull().default("received"),

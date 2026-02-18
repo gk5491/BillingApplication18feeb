@@ -798,7 +798,157 @@
           "link": "/invoices/1771390309460"
         }
       ]
+    },
+    {
+      "id": "24",
+      "quoteNumber": "QT-000024",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-18T06:16:44.984Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "phone",
+          "description": "ajfa",
+          "quantity": 3,
+          "rate": 20000,
+          "amount": 60000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 60000,
+      "total": 60000,
+      "createdAt": "2026-02-18T06:16:44.984Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-18T06:17:40.960Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-18T06:17:40.960Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00020",
+          "user": "Admin User",
+          "link": "/invoices/1771395460960"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "quoteNumber": "QT-000025",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-18T06:22:55.078Z",
+      "status": "Draft",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        }
+      ],
+      "subTotal": 15000,
+      "total": 15000,
+      "createdAt": "2026-02-18T06:22:55.078Z"
+    },
+    {
+      "id": "26",
+      "quoteNumber": "QT-000026",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-18T06:26:46.223Z",
+      "status": "Draft",
+      "items": [
+        {
+          "id": "1",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 1,
+          "rate": 12000,
+          "amount": 12000,
+          "unit": "pcs"
+        },
+        {
+          "id": "2",
+          "name": "Mac",
+          "description": "sffd",
+          "quantity": 1,
+          "rate": 1200000,
+          "amount": 1200000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 1212000,
+      "total": 1212000,
+      "createdAt": "2026-02-18T06:26:46.223Z"
     }
   ],
-  "nextQuoteNumber": 24
+  "nextQuoteNumber": 27
 }

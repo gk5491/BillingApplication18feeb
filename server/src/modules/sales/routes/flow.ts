@@ -293,7 +293,19 @@ export const createFlowRouter = (db: any) => {
 
             const customerIds = customers.map((c: any) => String(c.id));
             // Filter invoices for ANY of these customers
-            const myInvoices = invoicesData.invoices.filter((inv: any) => customerIds.includes(String(inv.customerId)));
+            const myInvoices = invoicesData.invoices
+                .filter((inv: any) => customerIds.includes(String(inv.customerId)))
+                .map((inv: any) => {
+                    const total = Number(inv.total || inv.amount || 0);
+                    const paid = Number(inv.amountPaid || 0);
+                    const status = inv.status || 'Draft';
+                    return {
+                        ...inv,
+                        total,
+                        amountPaid: paid,
+                        balanceDue: status === 'Paid' ? 0 : Math.max(0, total - paid)
+                    };
+                });
 
             console.log('Total invoices in system:', invoicesData.invoices.length);
             console.log('Invoices for these customers:', myInvoices.length);

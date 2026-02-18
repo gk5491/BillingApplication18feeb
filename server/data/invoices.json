@@ -1,6 +1,82 @@
 {
   "invoices": [
     {
+      "id": "1771395460960",
+      "invoiceNumber": "INV-00020",
+      "referenceNumber": "",
+      "date": "2026-02-18",
+      "dueDate": "2026-03-20",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "phone",
+          "description": "ajfa",
+          "quantity": 3,
+          "rate": 20000,
+          "amount": 60000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 60000,
+      "total": 60000,
+      "amountPaid": 0,
+      "balanceDue": 60000,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "24",
+      "sourceNumber": "QT-000024",
+      "createdAt": "2026-02-18T06:17:40.960Z",
+      "updatedAt": "2026-02-18T06:19:19.851Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-18T06:17:40.960Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000024",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-18T06:19:19.851Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-18T06:20:31.540Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹20,000 recorded and awaiting verification",
+          "user": "Customer"
+        }
+      ]
+    },
+    {
       "id": "1771390309460",
       "invoiceNumber": "INV-00019",
       "referenceNumber": "",
@@ -243,6 +319,13 @@
           "action": "sent",
           "description": "Invoice has been sent",
           "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-18T06:00:57.844Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹10,000 recorded and awaiting verification",
+          "user": "Customer"
         }
       ]
     },
@@ -1279,6 +1362,13 @@
           "action": "payment_recorded",
           "description": "Payment of ₹460 recorded and awaiting verification",
           "user": "Customer"
+        },
+        {
+          "id": "9",
+          "timestamp": "2026-02-18T06:01:44.451Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹460 recorded and awaiting verification",
+          "user": "Customer"
         }
       ],
       "creditsApplied": [
@@ -1501,5 +1591,5 @@
       ]
     }
   ],
-  "nextInvoiceNumber": 20
+  "nextInvoiceNumber": 21
 }

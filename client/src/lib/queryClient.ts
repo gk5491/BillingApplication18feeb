@@ -57,7 +57,24 @@ export const getQueryFn: <T>(options: {
         }
       }
 
-      const res = await fetch(queryKey.join("/") as string, {
+      let url = queryKey[0] as string;
+      if (queryKey.length > 1 && typeof queryKey[1] === "object") {
+        const queryParams = new URLSearchParams();
+        const params = queryKey[1] as Record<string, any>;
+        Object.entries(params).forEach(([key, value]) => {
+          if (value !== undefined && value !== null) {
+            queryParams.append(key, value.toString());
+          }
+        });
+        const queryString = queryParams.toString();
+        if (queryString) {
+          url += (url.includes("?") ? "&" : "?") + queryString;
+        }
+      } else if (queryKey.length > 1) {
+        url = queryKey.join("/");
+      }
+
+      const res = await fetch(url, {
         headers: {
           "x-organization-id": orgId,
           ...(token ? { "Authorization": `Bearer ${token}` } : {}),

@@ -49,6 +49,7 @@ export default function CustomerInvoicesPage() {
     const { user } = useAuthStore();
     const { data: invoicesData, isLoading } = useQuery({
         queryKey: ["/api/invoices"],
+        enabled: !!user?.id,
     });
 
     const { data: brandingData } = useQuery({
@@ -104,7 +105,7 @@ export default function CustomerInvoicesPage() {
 
         const matchesTab = activeTab === "all" ||
             (activeTab === "paid" && (status === "Paid" || status === "PAID")) ||
-            (activeTab === "unpaid" && (status === "Sent" || status === "Overdue" || status === "Partially Paid" || status === "PARTIALLY_PAID"));
+            (activeTab === "unpaid" && (status === "Sent" || status === "Overdue" || status === "Partially Paid" || status === "PARTIALLY_PAID" || status === "Pending Verification"));
         return matchesSearch && matchesTab;
     });
 

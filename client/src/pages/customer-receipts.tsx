@@ -26,13 +26,17 @@ import {
 } from "@/components/ui/table";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 
+import { useAuthStore } from "@/store/authStore";
+
 export default function CustomerReceiptsPage() {
+    const { user } = useAuthStore();
     const [searchTerm, setSearchTerm] = useState("");
     const [, setLocation] = useLocation();
     const [selectedReceipt, setSelectedReceipt] = useState<any>(null);
 
     const { data: receipts, isLoading } = useQuery<any>({
         queryKey: ["/api/customer/receipts", { customerId: user?.id }],
+        enabled: !!user?.id,
     });
 
     const filteredReceipts = receipts?.data?.filter((rec: any) => {
