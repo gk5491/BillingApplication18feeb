@@ -302,6 +302,41 @@ function PaymentDetailPanel({
               <span>Send to Customer</span>
             </Button>
 
+            <Select
+              value={payment.status}
+              onValueChange={async (val) => {
+                try {
+                  const response = await fetch(`/api/payments-received/${payment.id}/status`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ status: val })
+                  });
+                  const data = await response.json();
+                  if (data.success) {
+                    toast({ title: "Success", description: "Payment status updated" });
+                    // Immediately update local UI state via parent refresh functions
+                    fetchPayments(); 
+                    handlePaymentClick({ ...payment, status: val });
+                  } else {
+                    toast({ title: "Error", description: data.message, variant: "destructive" });
+                  }
+                } catch (error) {
+                  toast({ title: "Error", description: "Failed to update status", variant: "destructive" });
+                }
+              }}
+            >
+              <SelectTrigger className="h-9 w-[160px] rounded-md border-slate-200 hover:bg-slate-50 shadow-sm transition-all text-slate-700 font-medium">
+                <SelectValue placeholder="Status" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Received">Received</SelectItem>
+                <SelectItem value="Verified">Verified</SelectItem>
+                <SelectItem value="Not Received">Not Received</SelectItem>
+                <SelectItem value="Pending Verification">Pending Verification</SelectItem>
+                <SelectItem value="PAID">PAID</SelectItem>
+              </SelectContent>
+            </Select>
+
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button variant="outline" size="icon" className="h-9 w-9 rounded-md border-slate-200 hover:bg-slate-50 shadow-sm transition-all" onClick={onRefund}>
@@ -391,36 +426,14 @@ function PaymentDetailPanel({
                 </div>
                 <div>
                   <p className="text-sm text-slate-500">Status</p>
-                  <Select
-                    defaultValue={payment.status}
-                    onValueChange={async (val) => {
-                      try {
-                        const response = await fetch(`/api/payments-received/${payment.id}/status`, {
-                          method: 'PATCH',
-                          headers: { 'Content-Type': 'application/json' },
-                          body: JSON.stringify({ status: val })
-                        });
-                        const data = await response.json();
-                        if (data.success) {
-                          toast({ title: "Success", description: "Payment status updated" });
-                          fetchPayments();
-                        } else {
-                          toast({ title: "Error", description: data.message, variant: "destructive" });
-                        }
-                      } catch (error) {
-                        toast({ title: "Error", description: "Failed to update status", variant: "destructive" });
-                      }
-                    }}
-                  >
-                    <SelectTrigger className="h-8 w-[140px] mt-1">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="Received">Received</SelectItem>
-                      <SelectItem value="Verified">Verified</SelectItem>
-                      <SelectItem value="Not Received">Not Received</SelectItem>
-                    </SelectContent>
-                  </Select>
+                  <Badge variant="outline" className={cn(
+                    "mt-1",
+                    payment.status === 'Verified' || payment.status === 'PAID' ? "text-green-600 border-green-200 bg-green-50" :
+                    payment.status === 'Pending Verification' ? "text-yellow-600 border-yellow-200 bg-yellow-50" :
+                    "text-slate-600 border-slate-200 bg-slate-50"
+                  )}>
+                    {payment.status}
+                  </Badge>
                 </div>
               </div>
 

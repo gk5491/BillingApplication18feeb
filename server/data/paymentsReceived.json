@@ -371,7 +371,40 @@
       "amountInWords": "",
       "journalEntries": [],
       "createdAt": "2026-02-18T05:00:46.451Z"
+    },
+    {
+      "id": "1771392769341",
+      "paymentNumber": "PAY-96",
+      "date": "2026-02-18T05:32:49.341Z",
+      "referenceNumber": "INV-PAY-INV-00019",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "customerEmail": "",
+      "invoices": [
+        {
+          "id": "1771390309460",
+          "invoiceNumber": "INV-00019",
+          "amountApplied": 7000
+        }
+      ],
+      "mode": "Online",
+      "depositTo": "Undeposited Funds",
+      "amount": 7000,
+      "unusedAmount": 0,
+      "bankCharges": 0,
+      "tax": "None",
+      "taxAmount": 0,
+      "notes": "Online payment recorded by customer for invoice INV-00019",
+      "attachments": [],
+      "sendThankYou": true,
+      "status": "PAID",
+      "paymentType": "Customer Payment",
+      "placeOfSupply": "",
+      "descriptionOfSupply": "",
+      "amountInWords": "",
+      "journalEntries": [],
+      "createdAt": "2026-02-18T05:32:49.341Z"
     }
   ],
-  "nextPaymentNumber": 96
+  "nextPaymentNumber": 97
 }

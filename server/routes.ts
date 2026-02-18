@@ -7071,10 +7071,17 @@ export async function registerRoutes(
       }
       
       paymentsReceivedData.paymentsReceived[paymentIndex].status = status;
+      // Also update verified fields if moving to Verified
+      if (status === 'Verified') {
+        paymentsReceivedData.paymentsReceived[paymentIndex].verifiedAt = new Date().toISOString();
+        paymentsReceivedData.paymentsReceived[paymentIndex].verifiedBy = "Admin";
+      }
+      
       writePaymentsReceivedData(paymentsReceivedData);
       
       res.json({ success: true, data: paymentsReceivedData.paymentsReceived[paymentIndex] });
     } catch (error: any) {
+      console.error('Error updating status:', error);
       res.status(500).json({ success: false, message: error.message });
     }
   });

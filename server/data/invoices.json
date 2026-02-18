@@ -83,6 +83,13 @@
           "action": "payment_recorded",
           "description": "Payment of ₹1,000 recorded and awaiting verification",
           "user": "Customer"
+        },
+        {
+          "id": "5",
+          "timestamp": "2026-02-18T05:32:49.342Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹7,000 recorded and awaiting verification",
+          "user": "Customer"
         }
       ]
     },
