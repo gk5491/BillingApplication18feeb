@@ -1,0 +1,149 @@
+{
+  "vendors": [
+    {
+      "id": "1",
+      "organizationId": "1",
+      "salutation": "Mr.",
+      "firstName": "Prajwal",
+      "lastName": "Kadam",
+      "companyName": "CybaemTech ",
+      "displayName": "Prajwal K",
+      "email": "kadamprajwal358@gmail.com",
+      "workPhone": "09699720434",
+      "mobile": "09699720434",
+      "gstTreatment": "Registered Business - Regular",
+      "sourceOfSupply": "[MH] - Maharashtra",
+      "pan": "",
+      "expenseAccount": "Input Tax Credits",
+      "msmeRegistered": false,
+      "msmeRegistrationType": "",
+      "msmeRegistrationNumber": "",
+      "currency": "INR",
+      "openingBalance": 1000,
+      "paymentTerms": "Net 15",
+      "tds": "commission-brokerage-2",
+      "billingAddress": {
+        "attention": "SopanBagh Balewadi",
+        "countryRegion": "India",
+        "street1": "Balewadi, Pune",
+        "street2": "Balewadi, Pune",
+        "city": "Pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "413104",
+        "phone": "09699720434",
+        "faxNumber": "1234"
+      },
+      "shippingAddress": {
+        "attention": "SopanBagh Balewadi",
+        "countryRegion": "India",
+        "street1": "Balewadi, Pune",
+        "street2": "Balewadi, Pune",
+        "city": "Pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "413104",
+        "phone": "09699720434",
+        "faxNumber": "1234"
+      },
+      "bankDetails": {
+        "accountHolderName": "",
+        "bankName": "",
+        "accountNumber": "",
+        "ifscCode": "",
+        "swiftCode": "",
+        "branchName": ""
+      },
+      "isCrm": true,
+      "isPortalEnabled": false,
+      "remarks": "Great Work",
+      "contactPersons": [
+        {
+          "id": "1770350852597",
+          "salutation": "Mr.",
+          "firstName": "Nilraj",
+          "lastName": "Bhilare ",
+          "email": "BhilareNilraj@gmai.com",
+          "workPhone": "1234567890",
+          "mobile": "1122334455"
+        }
+      ],
+      "status": "active",
+      "payables": 0,
+      "unusedCredits": 0,
+      "createdAt": "2026-02-06T04:08:26.338Z",
+      "updatedAt": "2026-02-09T10:46:12.263Z"
+    },
+    {
+      "id": "3",
+      "organizationId": "1",
+      "salutation": "Mr.",
+      "firstName": "Ganesh",
+      "lastName": "K",
+      "companyName": "cybaeem",
+      "displayName": "Ganesh K",
+      "email": "ganesh@gmail.com",
+      "workPhone": "234312412",
+      "mobile": "12412421",
+      "gstTreatment": "Consumer",
+      "sourceOfSupply": "[AR] - Arunachal Pradesh",
+      "pan": "KNSH8192J",
+      "expenseAccount": "Advance Tax",
+      "msmeRegistered": false,
+      "msmeRegistrationType": "",
+      "msmeRegistrationNumber": "",
+      "currency": "INR",
+      "openingBalance": 2000,
+      "paymentTerms": "Net 30",
+      "tds": "interest-other-reduced",
+      "billingAddress": {
+        "attention": "bhumkar chowwk",
+        "countryRegion": "India",
+        "street1": "mh12",
+        "street2": "pune",
+        "city": "pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "72432",
+        "phone": "712912321",
+        "faxNumber": "873329023"
+      },
+      "shippingAddress": {
+        "attention": "bhumkar chowwk",
+        "countryRegion": "India",
+        "street1": "mh12",
+        "street2": "pune",
+        "city": "pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "72432",
+        "phone": "712912321",
+        "faxNumber": "873329023"
+      },
+      "bankDetails": {
+        "accountHolderName": "Ganesh",
+        "bankName": "SBI",
+        "accountNumber": "389247397180747",
+        "ifscCode": "HJB908392421",
+        "swiftCode": "GIG IC820",
+        "branchName": "SBI PUNEE"
+      },
+      "isCrm": false,
+      "isPortalEnabled": false,
+      "remarks": "COMPLETE YOURR PAYMMENT",
+      "contactPersons": [
+        {
+          "id": "1770707004063",
+          "salutation": "Mr.",
+          "firstName": "soham",
+          "lastName": "kale",
+          "email": "sohamm@gmail.com",
+          "workPhone": "2359032",
+          "mobile": "724217191"
+        }
+      ],
+      "status": "active",
+      "balanceToPay": 0,
+      "unusedCredits": 0,
+      "createdAt": "2026-02-10T07:04:48.777Z",
+      "updatedAt": "2026-02-10T07:04:48.777Z"
+    }
+  ],
+  "nextVendorId": 4
+}

@@ -1,0 +1,376 @@
+{
+  "profitAndLoss": {
+    "totalIncome": 1558000,
+    "totalExpenses": 889000,
+    "grossProfit": 1350000,
+    "netProfit": 669000,
+    "monthlyData": [
+      {
+        "month": "Apr 2025",
+        "income": 85000,
+        "expense": 45000,
+        "profit": 40000
+      },
+      {
+        "month": "May 2025",
+        "income": 92000,
+        "expense": 52000,
+        "profit": 40000
+      },
+      {
+        "month": "Jun 2025",
+        "income": 78000,
+        "expense": 48000,
+        "profit": 30000
+      },
+      {
+        "month": "Jul 2025",
+        "income": 105000,
+        "expense": 62000,
+        "profit": 43000
+      },
+      {
+        "month": "Aug 2025",
+        "income": 118000,
+        "expense": 71000,
+        "profit": 47000
+      },
+      {
+        "month": "Sep 2025",
+        "income": 125000,
+        "expense": 68000,
+        "profit": 57000
+      },
+      {
+        "month": "Oct 2025",
+        "income": 140000,
+        "expense": 85000,
+        "profit": 55000
+      },
+      {
+        "month": "Nov 2025",
+        "income": 155000,
+        "expense": 92000,
+        "profit": 63000
+      },
+      {
+        "month": "Dec 2025",
+        "income": 180000,
+        "expense": 105000,
+        "profit": 75000
+      },
+      {
+        "month": "Jan 2026",
+        "income": 145000,
+        "expense": 78000,
+        "profit": 67000
+      },
+      {
+        "month": "Feb 2026",
+        "income": 160000,
+        "expense": 88000,
+        "profit": 72000
+      },
+      {
+        "month": "Mar 2026",
+        "income": 175000,
+        "expense": 95000,
+        "profit": 80000
+      }
+    ]
+  },
+  "salesByCustomer": [
+    {
+      "customer": "Uraja Foods",
+      "totalSales": 485000,
+      "invoiceCount": 12,
+      "percentage": 31.1
+    },
+    {
+      "customer": "Ashtvinayak Education Society",
+      "totalSales": 325000,
+      "invoiceCount": 8,
+      "percentage": 20.9
+    },
+    {
+      "customer": "TechCorp Solutions Pvt Ltd",
+      "totalSales": 298000,
+      "invoiceCount": 6,
+      "percentage": 19.1
+    },
+    {
+      "customer": "Nilraj Bhilare",
+      "totalSales": 225000,
+      "invoiceCount": 15,
+      "percentage": 14.4
+    },
+    {
+      "customer": "Green Valley Enterprises",
+      "totalSales": 145000,
+      "invoiceCount": 4,
+      "percentage": 9.3
+    },
+    {
+      "customer": "Others",
+      "totalSales": 80000,
+      "invoiceCount": 10,
+      "percentage": 5.2
+    }
+  ],
+  "salesByProduct": [
+    {
+      "product": "Consulting Services",
+      "totalSales": 520000,
+      "quantity": 52,
+      "percentage": 33.4
+    },
+    {
+      "product": "Software License",
+      "totalSales": 380000,
+      "quantity": 38,
+      "percentage": 24.4
+    },
+    {
+      "product": "Training & Support",
+      "totalSales": 245000,
+      "quantity": 49,
+      "percentage": 15.7
+    },
+    {
+      "product": "Hardware Equipment",
+      "totalSales": 218000,
+      "quantity": 22,
+      "percentage": 14.0
+    },
+    {
+      "product": "Maintenance Services",
+      "totalSales": 195000,
+      "quantity": 65,
+      "percentage": 12.5
+    }
+  ],
+  "expenseBreakdown": [
+    {
+      "category": "Salaries and Employee Wages",
+      "amount": 450000,
+      "percentage": 50.6,
+      "color": "#4F46E5"
+    },
+    {
+      "category": "Rent Expense",
+      "amount": 120000,
+      "percentage": 13.5,
+      "color": "#10B981"
+    },
+    {
+      "category": "IT and Internet Expenses",
+      "amount": 85000,
+      "percentage": 9.6,
+      "color": "#F59E0B"
+    },
+    {
+      "category": "Travel Expense",
+      "amount": 65000,
+      "percentage": 7.3,
+      "color": "#EF4444"
+    },
+    {
+      "category": "Office Supplies",
+      "amount": 45000,
+      "percentage": 5.1,
+      "color": "#8B5CF6"
+    },
+    {
+      "category": "Advertising And Marketing",
+      "amount": 38000,
+      "percentage": 4.3,
+      "color": "#EC4899"
+    },
+    {
+      "category": "Bank Fees and Charges",
+      "amount": 33425,
+      "percentage": 3.8,
+      "color": "#06B6D4"
+    },
+    {
+      "category": "Other Expenses",
+      "amount": 52575,
+      "percentage": 5.8,
+      "color": "#6B7280"
+    }
+  ],
+  "taxSummary": {
+    "gstCollected": 185000,
+    "gstPaid": 72500,
+    "netGstPayable": 112500,
+    "tdsDeducted": 45000,
+    "monthlyGst": [
+      {
+        "month": "Apr 2025",
+        "collected": 12000,
+        "paid": 5500
+      },
+      {
+        "month": "May 2025",
+        "collected": 14500,
+        "paid": 6200
+      },
+      {
+        "month": "Jun 2025",
+        "collected": 11000,
+        "paid": 5000
+      },
+      {
+        "month": "Jul 2025",
+        "collected": 16500,
+        "paid": 7200
+      },
+      {
+        "month": "Aug 2025",
+        "collected": 18000,
+        "paid": 7800
+      },
+      {
+        "month": "Sep 2025",
+        "collected": 17500,
+        "paid": 6500
+      },
+      {
+        "month": "Oct 2025",
+        "collected": 19000,
+        "paid": 7000
+      },
+      {
+        "month": "Nov 2025",
+        "collected": 21000,
+        "paid": 7500
+      },
+      {
+        "month": "Dec 2025",
+        "collected": 24000,
+        "paid": 8000
+      },
+      {
+        "month": "Jan 2026",
+        "collected": 18500,
+        "paid": 6000
+      },
+      {
+        "month": "Feb 2026",
+        "collected": 13000,
+        "paid": 5800
+      },
+      {
+        "month": "Mar 2026",
+        "collected": 0,
+        "paid": 0
+      }
+    ]
+  },
+  "receivablesAging": [
+    {
+      "range": "Current",
+      "amount": 185000,
+      "count": 8
+    },
+    {
+      "range": "1-30 Days",
+      "amount": 35000,
+      "count": 3
+    },
+    {
+      "range": "31-60 Days",
+      "amount": 15780.50,
+      "count": 2
+    },
+    {
+      "range": "61-90 Days",
+      "amount": 10000,
+      "count": 1
+    },
+    {
+      "range": "Over 90 Days",
+      "amount": 0,
+      "count": 0
+    }
+  ],
+  "payablesAging": [
+    {
+      "range": "Current",
+      "amount": 98500,
+      "count": 5
+    },
+    {
+      "range": "1-30 Days",
+      "amount": 17150,
+      "count": 2
+    },
+    {
+      "range": "31-60 Days",
+      "amount": 10000,
+      "count": 1
+    },
+    {
+      "range": "61-90 Days",
+      "amount": 0,
+      "count": 0
+    },
+    {
+      "range": "Over 90 Days",
+      "amount": 0,
+      "count": 0
+    }
+  ],
+  "vendorSummary": [
+    {
+      "vendor": "Office Supplies Co",
+      "totalPurchases": 125000,
+      "billCount": 15,
+      "outstanding": 25000
+    },
+    {
+      "vendor": "Tech Equipment Ltd",
+      "totalPurchases": 98000,
+      "billCount": 8,
+      "outstanding": 18500
+    },
+    {
+      "vendor": "Utility Services",
+      "totalPurchases": 85000,
+      "billCount": 12,
+      "outstanding": 15000
+    },
+    {
+      "vendor": "Internet Provider",
+      "totalPurchases": 65000,
+      "billCount": 12,
+      "outstanding": 5500
+    },
+    {
+      "vendor": "Rent Payment",
+      "totalPurchases": 120000,
+      "billCount": 12,
+      "outstanding": 0
+    }
+  ],
+  "invoiceSummary": {
+    "totalInvoiced": 1558000,
+    "totalPaid": 1312219.50,
+    "totalOutstanding": 245780.50,
+    "overdueAmount": 60780.50,
+    "invoiceCount": 55,
+    "paidCount": 41,
+    "outstandingCount": 14,
+    "overdueCount": 3
+  },
+  "billSummary": {
+    "totalBilled": 493000,
+    "totalPaid": 367350,
+    "totalOutstanding": 125650,
+    "overdueAmount": 27150,
+    "billCount": 45,
+    "paidCount": 38,
+    "outstandingCount": 7,
+    "overdueCount": 2
+  }
+}

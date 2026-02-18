@@ -1,0 +1,313 @@
+/**
+ * Transaction Email API Routes
+ * 
+ * Handles manual email sending for transactions (invoices, estimates, etc.)
+ * Implements guard middleware and audit logging
+ */
+
+import { Router, Request, Response } from 'express';
+import { z } from 'zod';
+import { EmailTriggerService } from '../services/emailTriggerService';
+import { EmailTemplateRenderer } from '../services/emailTemplateRenderer';
+import { EmailDataService } from '../services/emailDataService';
+import { db } from '../database';
+import { invoices, estimates, salesOrders, creditNotes, customers, emailAudits } from '../database/schema';
+import { eq, and } from 'drizzle-orm';
+
+const router = Router();
+
+// =====================================================
+// Validation Schemas
+// =====================================================
+
+const sendEmailSchema = z.object({
+  recipients: z.array(z.string()).min(1, 'At least one recipient required'),
+  ccRecipients: z.array(z.string()).optional(),
+  bccRecipients: z.array(z.string()).optional(),
+  templateId: z.string().optional(),
+  customSubject: z.string().optional(),
+  customBody: z.string().optional(),
+  includePdf: z.boolean().default(true),
+  includePaymentLink: z.boolean().optional(),
+  sendMode: z.enum(['immediate', 'scheduled']),
+  scheduledAt: z.string().datetime().optional(),
+});
+
+const previewEmailSchema = z.object({
+  templateId: z.string().optional(),
+  recipientId: z.string(),
+});
+
+// =====================================================
+// Helper: Get Transaction by Type and ID
+// =====================================================
+
+async function getTransaction(type: string, id: string) {
+  switch (type) {
+    case 'invoice':
+      return await db.query.invoices.findFirst({ where: eq(invoices.id, id) });
+    case 'estimate':
+      return await db.query.estimates.findFirst({ where: eq(estimates.id, id) });
+    case 'sales_order':
+      return await db.query.salesOrders.findFirst({ where: eq(salesOrders.id, id) });
+    case 'credit_note':
+      return await db.query.creditNotes.findFirst({ where: eq(creditNotes.id, id) });
+    default:
+      throw new Error(`Unknown transaction type: ${type}`);
+  }
+}
+
+// =====================================================
+// POST /api/transactions/:type/:id/email
+// Send transaction email manually
+// =====================================================
+
+router.post('/:type/:id/email', async (req: Request, res: Response) => {
+  try {
+    const { type, id } = req.params;
+
+    // Validate request body
+    const body = sendEmailSchema.parse(req.body);
+
+    // Get transaction
+    const transaction = await getTransaction(type, id);
+
+    if (!transaction) {
+      return res.status(404).json({
+        success: false,
+        error: 'Transaction not found',
+      });
+    }
+
+    // Get customer
+    const customer = await db.query.customers.findFirst({
+      where: eq(customers.id, transaction.customerId),
+    });
+
+    if (!customer) {
+      return res.status(404).json({
+        success: false,
+        error: 'Customer not found',
+      });
+    }
+
+    // Create email trigger
+    const result = await EmailTriggerService.createTrigger(
+      {
+        transactionType: type as any,
+        transactionId: id,
+        customerId: transaction.customerId,
+        recipients: body.recipients,
+        ccRecipients: body.ccRecipients,
+        bccRecipients: body.bccRecipients,
+        templateId: body.templateId,
+        customSubject: body.customSubject,
+        customBody: body.customBody,
+        includePdf: body.includePdf,
+        includePaymentLink: body.includePaymentLink,
+        sendMode: body.sendMode,
+        scheduledAt: body.scheduledAt ? new Date(body.scheduledAt) : undefined,
+        userId: req.user?.id, // Assumes auth middleware sets req.user
+      },
+      {
+        customerId: transaction.customerId,
+        transaction,
+        customer,
+      }
+    );
+
+    // Get recipient details for response
+    // Get recipient details for response
+    const allRecipients = EmailDataService.getContactPersons();
+    const recipients = allRecipients.filter((r: any) => body.recipients.includes(r.id));
+
+    return res.status(200).json({
+      success: true,
+      triggerId: result.triggerId,
+      auditId: result.auditId,
+      queuedAt: new Date().toISOString(),
+      estimatedSendAt: body.scheduledAt || new Date().toISOString(),
+      recipients: recipients.map(r => ({
+        contactId: r.id,
+        email: r.email,
+        name: r.name,
+      })),
+      warnings: result.warnings,
+    });
+
+  } catch (error: any) {
+    console.error('Error sending transaction email:', error);
+
+    if (error instanceof z.ZodError) {
+      return res.status(400).json({
+        success: false,
+        error: 'Validation error',
+        details: error.errors,
+      });
+    }
+
+    return res.status(500).json({
+      success: false,
+      error: error.message || 'Failed to send email',
+    });
+  }
+});
+
+// =====================================================
+// GET /api/transactions/:type/:id/email/preview
+// Preview email before sending
+// =====================================================
+
+router.get('/:type/:id/email/preview', async (req: Request, res: Response) => {
+  try {
+    const { type, id } = req.params;
+
+    // Validate query params
+    const query = previewEmailSchema.parse(req.query);
+
+    // Get transaction
+    const transaction = await getTransaction(type, id);
+
+    if (!transaction) {
+      return res.status(404).json({
+        success: false,
+        error: 'Transaction not found',
+      });
+    }
+
+    // Get customer
+    const customer = await db.query.customers.findFirst({
+      where: eq(customers.id, transaction.customerId),
+    });
+
+    // Get recipient contact
+    const allContacts = EmailDataService.getContactPersons(transaction.customerId);
+    const contact = allContacts.find((c: any) => c.id === query.recipientId);
+
+    if (!contact) {
+      return res.status(404).json({
+        success: false,
+        error: 'Contact not found',
+      });
+    }
+
+    // Render email preview
+    const content = await EmailTemplateRenderer.render({
+      templateId: query.templateId || 'tpl_invoice_default',
+      context: {
+        transaction,
+        customer,
+        contact,
+      },
+    });
+
+    return res.status(200).json({
+      success: true,
+      subject: content.subject,
+      bodyHtml: content.bodyHtml,
+      bodyText: content.bodyText,
+      attachments: transaction.isDraft ? [] : [
+        {
+          filename: `${type}_${transaction.number || id}.pdf`,
+          size: 'N/A (preview mode)',
+          type: 'application/pdf',
+        },
+      ],
+    });
+
+  } catch (error: any) {
+    console.error('Error previewing email:', error);
+
+    if (error instanceof z.ZodError) {
+      return res.status(400).json({
+        success: false,
+        error: 'Validation error',
+        details: error.errors,
+      });
+    }
+
+    return res.status(500).json({
+      success: false,
+      error: error.message || 'Failed to preview email',
+    });
+  }
+});
+
+// =====================================================
+// GET /api/transactions/:type/:id/email/audit
+// Get email audit history for transaction
+// =====================================================
+
+router.get('/:type/:id/email/audit', async (req: Request, res: Response) => {
+  try {
+    const { type, id } = req.params;
+
+    // Get all email audits for this transaction
+    const audits = await db.query.emailAudits.findMany({
+      where: and(
+        eq(emailAudits.transactionType, type),
+        eq(emailAudits.transactionId, id)
+      ),
+      include: {
+        trigger: {
+          include: {
+            user: {
+              select: {
+                id: true,
+                name: true,
+                email: true,
+              },
+            },
+            workflow: {
+              select: {
+                id: true,
+                name: true,
+              },
+            },
+          },
+        },
+      },
+      orderBy: (emailAudits, { desc }) => [desc(emailAudits.createdAt)],
+    });
+
+    return res.status(200).json({
+      success: true,
+      audits: audits.map(audit => ({
+        id: audit.id,
+        status: audit.status,
+        toAddresses: JSON.parse(audit.toAddresses),
+        subject: audit.subject,
+        sentAt: audit.sentAt,
+        attempts: audit.attempts,
+        errorMessage: audit.errorMessage,
+        triggeredBy: audit.trigger.userId ? {
+          type: 'user',
+          id: audit.trigger.user.id,
+          name: audit.trigger.user.name,
+        } : audit.trigger.workflowId ? {
+          type: 'workflow',
+          id: audit.trigger.workflow.id,
+          name: audit.trigger.workflow.name,
+        } : {
+          type: 'system',
+        },
+        createdAt: audit.createdAt,
+      })),
+      total: audits.length,
+    });
+
+  } catch (error: any) {
+    console.error('Error fetching email audit:', error);
+
+    return res.status(500).json({
+      success: false,
+      error: error.message || 'Failed to fetch email audit',
+    });
+  }
+});
+
+// =====================================================
+// Export Router
+// =====================================================
+
+export default router;

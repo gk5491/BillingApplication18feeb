@@ -1,0 +1,64 @@
+{
+  "summary": {
+    "totalReceivables": {
+      "totalUnpaid": 0,
+      "current": 0,
+      "overdue": 0
+    },
+    "totalPayables": {
+      "totalUnpaid": 0,
+      "current": 0,
+      "overdue": 0
+    },
+    "cashOnHand": 0,
+    "bankBalance": 0,
+    "totalIncome": 0,
+    "totalExpenses": 0
+  },
+  "cashFlow": [],
+  "incomeExpense": [],
+  "topExpenses": [],
+  "recentTransactions": [],
+  "projects": [],
+  "bankAccounts": [
+    {
+      "id": "1",
+      "name": "HDFC Business Account",
+      "balance": 850000,
+      "type": "savings"
+    },
+    {
+      "id": "2",
+      "name": "ICICI Current Account",
+      "balance": 400000,
+      "type": "current"
+    },
+    {
+      "id": "3",
+      "name": "Petty Cash",
+      "balance": 25000,
+      "type": "cash"
+    }
+  ],
+  "overdueInvoices": [],
+  "accountWatchlist": [
+    {
+      "id": "1",
+      "name": "Accounts Receivable",
+      "balance": 0,
+      "change": 0
+    },
+    {
+      "id": "2",
+      "name": "Cash and Bank",
+      "balance": 0,
+      "change": 0
+    },
+    {
+      "id": "3",
+      "name": "Accounts Payable",
+      "balance": 0,
+      "change": 0
+    }
+  ]
+}

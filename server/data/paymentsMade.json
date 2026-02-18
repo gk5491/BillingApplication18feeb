@@ -1,0 +1,294 @@
+{
+  "paymentsMade": [
+    {
+      "id": "pm-1770359826886",
+      "paymentNumber": "PM-00079",
+      "vendorId": "1",
+      "vendorName": "Prajwal Kadam",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 7700,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-06",
+      "paymentMode": "Cash",
+      "paidThrough": "Bank Account",
+      "depositTo": "prepaid_expenses",
+      "reference": "1234",
+      "notes": "done",
+      "billPayments": {
+        "1770359742469": {
+          "billId": "1770359742469",
+          "billNumber": "6",
+          "billAmount": 17700,
+          "amountPaid": 7700,
+          "paymentAmount": 7700
+        }
+      },
+      "paymentType": "bill_payment",
+      "paymentSource": "record_payment",
+      "status": "PAID",
+      "createdAt": "2026-02-06T06:37:06.862Z",
+      "updatedAt": "2026-02-06T06:37:06.862Z"
+    },
+    {
+      "id": "pm-1770366809752",
+      "paymentNumber": "PM-00080",
+      "vendorId": "1",
+      "vendorName": "Prajwal Kadam",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 10000,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-06",
+      "paymentMode": "Cash",
+      "paidThrough": "Petty Cash",
+      "depositTo": "prepaid_expenses",
+      "reference": "",
+      "notes": "Payment for Bill #9",
+      "billPayments": {
+        "1770366574889": {
+          "billId": "1770366574889",
+          "billNumber": "9",
+          "billAmount": 17700,
+          "amountPaid": 10000
+        }
+      },
+      "paymentType": "bill_payment",
+      "paymentSource": "record_payment",
+      "status": "PAID",
+      "createdAt": "2026-02-06T08:33:29.750Z",
+      "updatedAt": "2026-02-06T08:33:29.750Z"
+    },
+    {
+      "id": "pm-1770615222008",
+      "paymentNumber": "PM-00081",
+      "vendorId": "1",
+      "vendorName": "Prajwal Kadam",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 100,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-09",
+      "paymentMode": "Cash",
+      "paidThrough": "Petty Cash",
+      "depositTo": "prepaid_expenses",
+      "reference": "",
+      "notes": "Payment for Bill #9",
+      "billPayments": {
+        "1770366574889": {
+          "billId": "1770366574889",
+          "billNumber": "9",
+          "billAmount": 17700,
+          "amountPaid": 100
+        }
+      },
+      "paymentType": "bill_payment",
+      "paymentSource": "record_payment",
+      "status": "PAID",
+      "createdAt": "2026-02-09T05:33:41.981Z",
+      "updatedAt": "2026-02-09T05:33:41.981Z"
+    },
+    {
+      "id": "pm-1770617729403",
+      "organizationId": "1",
+      "paymentNumber": "PM-00082",
+      "vendorId": "2",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 800,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-09",
+      "paymentMode": "Cash",
+      "paidThrough": "Petty Cash",
+      "depositTo": "prepaid_expenses",
+      "reference": "",
+      "notes": "",
+      "billPayments": {
+        "1770617729355": {
+          "billId": "1770617729355",
+          "billNumber": "BILL-1770617729335",
+          "billAmount": 1000,
+          "amountPaid": 800,
+          "paymentAmount": 800
+        }
+      },
+      "paymentType": "bill_payment",
+      "status": "PAID",
+      "createdAt": "2026-02-09T06:15:29.403Z",
+      "updatedAt": "2026-02-09T06:15:29.458Z"
+    },
+    {
+      "id": "pm-1770707625991",
+      "paymentNumber": "PM-00083",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 5000,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-10",
+      "paymentMode": "Cash",
+      "paidThrough": "Petty Cash",
+      "depositTo": "prepaid_expenses",
+      "reference": "",
+      "notes": "Payment for Bill #12",
+      "billPayments": {
+        "1770707589305": {
+          "billId": "1770707589305",
+          "billNumber": "12",
+          "billAmount": 15000,
+          "amountPaid": 5000
+        }
+      },
+      "paymentType": "bill_payment",
+      "paymentSource": "record_payment",
+      "status": "PAID",
+      "createdAt": "2026-02-10T07:13:45.990Z",
+      "updatedAt": "2026-02-10T07:13:45.990Z"
+    },
+    {
+      "id": "pm-1770708599620",
+      "paymentNumber": "PM-00084",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 10000,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-10",
+      "paymentMode": "Cash",
+      "paidThrough": "Petty Cash",
+      "depositTo": "prepaid_expenses",
+      "reference": "",
+      "notes": "Payment for Bill #12",
+      "billPayments": {
+        "1770707589305": {
+          "billId": "1770707589305",
+          "billNumber": "12",
+          "billAmount": 15000,
+          "amountPaid": 10000
+        }
+      },
+      "paymentType": "bill_payment",
+      "paymentSource": "record_payment",
+      "status": "PAID",
+      "createdAt": "2026-02-10T07:29:59.617Z",
+      "updatedAt": "2026-02-10T07:29:59.617Z"
+    },
+    {
+      "id": "pm-1770713044369",
+      "paymentNumber": "PM-00085",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 500,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-10",
+      "paymentMode": "Cash",
+      "paidThrough": "Petty Cash",
+      "depositTo": "prepaid_expenses",
+      "reference": "",
+      "notes": "Payment for Bill #14",
+      "billPayments": {
+        "1770713010880": {
+          "billId": "1770713010880",
+          "billNumber": "14",
+          "billAmount": 15000,
+          "amountPaid": 500
+        }
+      },
+      "paymentType": "bill_payment",
+      "paymentSource": "record_payment",
+      "status": "VOIDED",
+      "createdAt": "2026-02-10T08:44:04.369Z",
+      "updatedAt": "2026-02-10T09:49:06.188Z"
+    },
+    {
+      "id": "pm-1770713446911",
+      "paymentNumber": "PM-00086",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 75000,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-10",
+      "paymentMode": "Cash",
+      "paidThrough": "Petty Cash",
+      "depositTo": "prepaid_expenses",
+      "reference": "",
+      "notes": "Payment for Bill #13",
+      "billPayments": {
+        "1770708567179": {
+          "billId": "1770708567179",
+          "billNumber": "13",
+          "billAmount": 75000,
+          "amountPaid": 75000
+        }
+      },
+      "paymentType": "bill_payment",
+      "paymentSource": "record_payment",
+      "status": "PAID",
+      "createdAt": "2026-02-10T08:50:46.909Z",
+      "updatedAt": "2026-02-10T08:50:46.909Z"
+    },
+    {
+      "id": "pm-1770791919340",
+      "paymentNumber": "PM-00087",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "gstTreatment": "",
+      "sourceOfSupply": "",
+      "destinationOfSupply": "",
+      "descriptionOfSupply": "",
+      "paymentAmount": 60,
+      "reverseCharge": false,
+      "tds": "",
+      "paymentDate": "2026-02-11",
+      "paymentMode": "Cash",
+      "paidThrough": "Petty Cash",
+      "depositTo": "prepaid_expenses",
+      "reference": "",
+      "notes": "Payment for Bill #16",
+      "billPayments": {
+        "1770791906254": {
+          "billId": "1770791906254",
+          "billNumber": "16",
+          "billAmount": 20060,
+          "amountPaid": 60
+        }
+      },
+      "paymentType": "bill_payment",
+      "paymentSource": "record_payment",
+      "status": "PAID",
+      "createdAt": "2026-02-11T06:38:39.325Z",
+      "updatedAt": "2026-02-11T06:38:39.325Z"
+    }
+  ],
+  "nextPaymentNumber": 88
+}

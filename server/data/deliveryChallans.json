@@ -1,0 +1,69 @@
+{
+  "deliveryChallans": [
+    {
+      "id": "1770627211992",
+      "challanNumber": "DC-00012",
+      "referenceNumber": "",
+      "date": "2026-02-09",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "challanType": "supply_for_repair",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "placeOfSupply": "",
+      "gstin": "",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1",
+          "name": "Tab",
+          "description": "ok",
+          "hsnSac": "12312232",
+          "quantity": 4,
+          "unit": "pcs",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 10800,
+          "taxName": "GST18",
+          "amount": 70800
+        }
+      ],
+      "subTotal": 60000,
+      "cgst": 5400,
+      "sgst": 5400,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 70800,
+      "customerNotes": "nice",
+      "termsAndConditions": "",
+      "status": "OPEN",
+      "invoiceStatus": "",
+      "invoiceId": null,
+      "createdAt": "2026-02-09T08:53:31.992Z",
+      "updatedAt": "2026-02-09T08:53:31.992Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-09T08:53:31.992Z",
+          "action": "created",
+          "description": "Delivery challan DC-00012 created",
+          "user": "Admin User"
+        }
+      ]
+    }
+  ],
+  "nextChallanNumber": 13
+}

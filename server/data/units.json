@@ -1,0 +1,109 @@
+{
+  "units": [
+    {
+      "id": "1",
+      "name": "box",
+      "uqc": "BOX"
+    },
+    {
+      "id": "2",
+      "name": "cm",
+      "uqc": "CMS"
+    },
+    {
+      "id": "3",
+      "name": "dz",
+      "uqc": "DOZ"
+    },
+    {
+      "id": "4",
+      "name": "ft",
+      "uqc": "FTS"
+    },
+    {
+      "id": "5",
+      "name": "g",
+      "uqc": "GMS"
+    },
+    {
+      "id": "6",
+      "name": "in",
+      "uqc": "INC"
+    },
+    {
+      "id": "7",
+      "name": "kg",
+      "uqc": "KGS"
+    },
+    {
+      "id": "8",
+      "name": "km",
+      "uqc": "KME"
+    },
+    {
+      "id": "9",
+      "name": "lb",
+      "uqc": "LBS"
+    },
+    {
+      "id": "10",
+      "name": "mg",
+      "uqc": "MGS"
+    },
+    {
+      "id": "11",
+      "name": "ml",
+      "uqc": "MLT"
+    },
+    {
+      "id": "12",
+      "name": "m",
+      "uqc": "MTR"
+    },
+    {
+      "id": "13",
+      "name": "pcs",
+      "uqc": "PCS"
+    },
+    {
+      "id": "14",
+      "name": "ltr",
+      "uqc": "LTR"
+    },
+    {
+      "id": "15",
+      "name": "ton",
+      "uqc": "TON"
+    },
+    {
+      "id": "16",
+      "name": "pair",
+      "uqc": "PAR"
+    },
+    {
+      "id": "17",
+      "name": "set",
+      "uqc": "SET"
+    },
+    {
+      "id": "18",
+      "name": "sqm",
+      "uqc": "SQM"
+    },
+    {
+      "id": "19",
+      "name": "sqft",
+      "uqc": "SQF"
+    },
+    {
+      "id": "1766469125650",
+      "name": "nos",
+      "uqc": "NUMBERS (PIECES)"
+    },
+    {
+      "id": "1770005685937",
+      "name": "hourse",
+      "uqc": "HRS"
+    }
+  ]
+}

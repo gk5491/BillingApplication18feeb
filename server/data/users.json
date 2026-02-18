@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": "6de43ffe-dba7-4ff7-93e4-8c8978e28eda",
+      "username": "superadmin",
+      "password": "password",
+      "role": "super_admin",
+      "name": "Super Admin",
+      "email": "ganesh.kale@cybaemtech.com"
+    },
+    {
+      "id": "13fecb57-16ce-4c5e-b5d8-a8262c61cfd4",
+      "username": "admin",
+      "password": "password",
+      "role": "admin",
+      "name": "Admin",
+      "email": "ganesh.kale@cybaemtech.com"
+    },
+    {
+      "username": "customer@test.com",
+      "password": "password",
+      "name": "Test Customer",
+      "role": "customer",
+      "id": "b0924d03-3770-419c-8545-b2444e51ff01"
+    },
+    {
+      "id": "d01a7f69-2ffa-4756-b2bb-2e2911c7aa88",
+      "username": "ganeshkale5491@gmail.com",
+      "password": "password",
+      "role": "customer",
+      "name": "Customer Ganesh",
+      "email": "ganeshkale5491@gmail.com"
+    },
+    {
+      "id": "e5b8e9a1-f7c8-4a9d-b0e1-d2c3b4a5e6f7",
+      "username": "Sujay.Palande@cybaemtech.com",
+      "password": "password",
+      "role": "customer",
+      "name": "Sujay Palande",
+      "email": "Sujay.Palande@cybaemtech.com"
+    },
+    {
+      "id": "f5a6b7c8-d9e0-4a1b-c2d3-e4f5a6b7c8d9",
+      "username": "ganeshrk5491@gmail.com",
+      "password": "password",
+      "role": "customer",
+      "name": "Soham kale",
+      "email": "ganeshrk5491@gmail.com"
+    },
+    {
+      "id": "4488091f-180c-473f-8704-e749479dfb92",
+      "username": "customer",
+      "password": "password",
+      "role": "customer",
+      "name": "Demo Customer"
+    },
+    {
+      "username": "priyanka.k@cybaemtech.com",
+      "password": "123456",
+      "name": "Mrs. Priyanka karanjewar",
+      "role": "customer",
+      "id": "f1d60796-d246-4b62-8d84-dc3f6a477a16"
+    }
+  ]
+}

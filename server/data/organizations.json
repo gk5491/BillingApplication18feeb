@@ -1,0 +1,24 @@
+{
+  "organizations": [
+    {
+      "id": "1",
+      "name": "Cybaem Tech",
+      "industry": "Technology",
+      "location": "India",
+      "gstRegistered": true,
+      "gstin": "27AAGCA4900Q1ZE",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "state": "Maharashtra",
+      "street1": "bhumkar chowk",
+      "street2": "Wakad road, pune",
+      "city": "Pune",
+      "postalCode": "411057",
+      "currency": "INR",
+      "language": "English",
+      "timezone": "IST (Asia/Kolkata)",
+      "note": "",
+      "email": "ganesh.kale@cybaemtech.com"
+    }
+  ],
+  "nextOrgId": 2
+}

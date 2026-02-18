@@ -1,0 +1,23 @@
+{
+  "id": "default",
+  "logo": {
+    "url": "/uploads/logos/logo-1769595414148.png",
+    "fileName": "01_CYBAEM TECH Logo 2026 PNG 1.png",
+    "uploadedAt": "2026-01-28T10:16:54.149Z",
+    "fileSize": 77338
+  },
+  "createdAt": "2025-12-24T06:00:00Z",
+  "updatedAt": "2026-01-28T11:10:13.388Z",
+  "signature": {
+    "url": "/uploads/signatures/signature-1769598613386.png",
+    "fileName": "image (1).png",
+    "uploadedAt": "2026-01-28T11:10:13.388Z",
+    "fileSize": 249051
+  },
+  "icon": {
+    "url": "/uploads/icons/icon-1769598584704.png",
+    "fileName": "02_CYBAEM TECH Logo 2026 PNG 3.png",
+    "uploadedAt": "2026-01-28T11:09:44.711Z",
+    "fileSize": 131860
+  }
+}

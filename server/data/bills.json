@@ -1,0 +1,718 @@
+{
+  "bills": [
+    {
+      "id": "1770791906254",
+      "organizationId": "1",
+      "billNumber": "16",
+      "purchaseOrderId": "1770791894014",
+      "orderNumber": "PO-2025-0008",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "vendorAddress": {
+        "street1": "mh12",
+        "street2": "pune",
+        "city": "pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "72432",
+        "countryRegion": "India"
+      },
+      "billDate": "2026-02-11",
+      "dueDate": "2026-02-11",
+      "paymentTerms": "Due on Receipt",
+      "reverseCharge": false,
+      "subject": "Bill for PO# PO-2025-0008",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770714286345",
+          "itemName": "digital bharat ",
+          "description": "",
+          "account": "cost_of_goods",
+          "quantity": 1,
+          "rate": 17000,
+          "tax": "gst_18",
+          "taxAmount": 3060,
+          "amount": 20060
+        }
+      ],
+      "subTotal": 17000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 3060,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 20060,
+      "amountPaid": 60,
+      "balanceDue": 20000,
+      "notes": "",
+      "attachments": [],
+      "status": "PARTIALLY_PAID",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-11T06:38:26.253Z",
+      "updatedAt": "2026-02-11T06:38:56.219Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-11T06:38:26.253Z",
+          "action": "created",
+          "description": "Bill created from Purchase Order PO# PO-2025-0008",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-11T06:38:31.125Z",
+          "action": "updated",
+          "description": "Bill updated. New total: ₹20060.00, Balance due: ₹20060.00",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-11T06:38:39.325Z",
+          "action": "payment",
+          "description": "Payment of ₹60 recorded",
+          "user": "Admin User"
+        },
+        {
+          "id": "1770791936221",
+          "timestamp": "2026-02-11T06:38:56.219Z",
+          "action": "credit_applied",
+          "description": "Vendor Credit VC-00025 applied: ₹0",
+          "user": "Admin User"
+        }
+      ],
+      "tcsType": "TCS",
+      "tcsCategory": "none",
+      "tcsValue": 0,
+      "tdsValue": 0,
+      "tcsAmount": 0,
+      "tdsAmount": 0,
+      "paymentsRecorded": [
+        {
+          "paymentId": "direct-1770791919325",
+          "paymentNumber": "PM-00087",
+          "amount": 60,
+          "date": "2026-02-11",
+          "mode": "Cash"
+        }
+      ],
+      "creditsApplied": [
+        {
+          "creditId": "vc-1770791936220",
+          "creditNumber": "VC-00025",
+          "amount": 0,
+          "appliedDate": "2026-02-11"
+        }
+      ]
+    },
+    {
+      "id": "1770714311808",
+      "organizationId": "1",
+      "billNumber": "15",
+      "orderNumber": "",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "vendorAddress": {
+        "street1": "mh12",
+        "street2": "pune",
+        "city": "pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "72432",
+        "country": "India",
+        "gstin": ""
+      },
+      "billDate": "2026-02-10",
+      "dueDate": "2026-02-10",
+      "paymentTerms": "Due on Receipt",
+      "reverseCharge": false,
+      "subject": "",
+      "items": [
+        {
+          "id": "1770714300860",
+          "itemName": "digital bharat ",
+          "description": "",
+          "account": "cost_of_goods",
+          "quantity": 2,
+          "rate": 17000,
+          "tax": "",
+          "taxAmount": 0,
+          "customerDetails": "none",
+          "amount": 34000
+        },
+        {
+          "id": "1770714477098",
+          "itemName": "Laptop",
+          "description": "",
+          "account": "input_tax_credits",
+          "quantity": 1,
+          "rate": 15000,
+          "tax": "",
+          "taxAmount": 0,
+          "customerDetails": "none",
+          "amount": 15000
+        }
+      ],
+      "subTotal": 49000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 0,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 49000,
+      "amountPaid": 34100,
+      "balanceDue": 14900,
+      "notes": "",
+      "attachments": [],
+      "status": "PARTIALLY_PAID",
+      "pdfTemplate": "Standard Template",
+      "journalEntries": [],
+      "createdAt": "2026-02-10T09:05:11.808Z",
+      "updatedAt": "2026-02-10T12:07:41.803Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-10T09:05:11.808Z",
+          "action": "created",
+          "description": "Bill created for ₹34,000",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-10T09:08:01.304Z",
+          "action": "updated",
+          "description": "Bill updated. New total: ₹49000.00, Balance due: ₹49000.00",
+          "user": "Admin User"
+        },
+        {
+          "id": "1770716798654",
+          "timestamp": "2026-02-10T09:46:38.646Z",
+          "action": "credit_applied",
+          "description": "Vendor Credit VC-00023 applied: ₹34000",
+          "user": "Admin User"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-10T12:07:41.803Z",
+          "action": "credit_applied",
+          "description": "Vendor Credit VC-00024 applied: ₹100.00",
+          "user": "Admin User"
+        }
+      ],
+      "tcsType": "TCS",
+      "tcsCategory": "none",
+      "tcsValue": 0,
+      "tdsValue": 0,
+      "purchaseOrderId": "",
+      "tcsAmount": 0,
+      "tdsAmount": 0,
+      "paymentsRecorded": [],
+      "creditsApplied": [
+        {
+          "creditId": "vc-1770716798650",
+          "creditNumber": "VC-00023",
+          "amount": 34000,
+          "appliedDate": "2026-02-10"
+        },
+        {
+          "creditId": "vc-1770725211887",
+          "creditNumber": "VC-00024",
+          "amount": 100,
+          "appliedDate": "2026-02-10"
+        }
+      ]
+    },
+    {
+      "id": "1770713010880",
+      "organizationId": "1",
+      "billNumber": "14",
+      "orderNumber": "",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "vendorAddress": {
+        "street1": "mh12",
+        "street2": "pune",
+        "city": "pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "72432",
+        "country": "India",
+        "gstin": ""
+      },
+      "billDate": "2026-02-10",
+      "dueDate": "2026-02-10",
+      "paymentTerms": "Due on Receipt",
+      "reverseCharge": false,
+      "subject": "",
+      "items": [
+        {
+          "id": "1770713006804",
+          "itemName": "Laptop",
+          "description": "",
+          "account": "input_tax_credits",
+          "quantity": 1,
+          "rate": 15000,
+          "tax": "",
+          "taxAmount": 0,
+          "customerDetails": "none",
+          "amount": 15000
+        }
+      ],
+      "subTotal": 15000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 0,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 15000,
+      "amountPaid": 15000,
+      "balanceDue": 0,
+      "notes": "",
+      "attachments": [],
+      "status": "PAID",
+      "pdfTemplate": "Standard Template",
+      "journalEntries": [],
+      "createdAt": "2026-02-10T08:43:30.880Z",
+      "updatedAt": "2026-02-10T12:07:19.022Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-10T08:43:30.880Z",
+          "action": "created",
+          "description": "Bill created for ₹15,000",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-10T08:44:04.369Z",
+          "action": "payment",
+          "description": "Payment of ₹500 recorded",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-10T08:52:58.844Z",
+          "action": "updated",
+          "description": "Bill updated. New total: ₹15000.00, Balance due: ₹14500.00",
+          "user": "Admin User"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-10T09:48:20.486Z",
+          "action": "credit_applied",
+          "description": "Vendor Credit VC-00023 applied: ₹500.00",
+          "user": "Admin User"
+        },
+        {
+          "id": "1770716946188",
+          "timestamp": "2026-02-10T09:49:06.188Z",
+          "action": "payment_voided",
+          "description": "Payment of ₹500 voided (PM-00085)",
+          "user": "System"
+        },
+        {
+          "id": "1770725211889",
+          "timestamp": "2026-02-10T12:06:51.886Z",
+          "action": "credit_applied",
+          "description": "Vendor Credit VC-00024 applied: ₹0",
+          "user": "Admin User"
+        },
+        {
+          "id": "7",
+          "timestamp": "2026-02-10T12:07:19.022Z",
+          "action": "credit_applied",
+          "description": "Vendor Credit VC-00024 applied: ₹14000.00",
+          "user": "Admin User"
+        }
+      ],
+      "paymentsRecorded": [
+        {
+          "paymentId": "direct-1770713044369",
+          "paymentNumber": "PM-00085",
+          "amount": 500,
+          "date": "2026-02-10",
+          "mode": "Cash"
+        }
+      ],
+      "tcsType": "TCS",
+      "tcsCategory": "none",
+      "tcsValue": 0,
+      "tdsValue": 0,
+      "purchaseOrderId": "",
+      "tcsAmount": 0,
+      "tdsAmount": 0,
+      "creditsApplied": [
+        {
+          "creditId": "vc-1770716798650",
+          "creditNumber": "VC-00023",
+          "amount": 500,
+          "appliedDate": "2026-02-10"
+        },
+        {
+          "creditId": "vc-1770725211887",
+          "creditNumber": "VC-00024",
+          "amount": 0,
+          "appliedDate": "2026-02-10"
+        },
+        {
+          "creditId": "vc-1770725211887",
+          "creditNumber": "VC-00024",
+          "amount": 14000,
+          "appliedDate": "2026-02-10"
+        }
+      ]
+    },
+    {
+      "id": "1770708567179",
+      "organizationId": "1",
+      "billNumber": "13",
+      "orderNumber": "",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "vendorAddress": {
+        "street1": "mh12",
+        "street2": "pune",
+        "city": "pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "72432",
+        "country": "India",
+        "gstin": ""
+      },
+      "billDate": "2026-02-10",
+      "dueDate": "2026-02-10",
+      "paymentTerms": "Due on Receipt",
+      "reverseCharge": false,
+      "subject": "",
+      "items": [
+        {
+          "id": "1770708548891",
+          "itemName": "Tab",
+          "description": "ok",
+          "account": "input_tax_credits",
+          "quantity": 2,
+          "rate": 15000,
+          "tax": "",
+          "taxAmount": 0,
+          "customerDetails": "none",
+          "amount": 30000
+        },
+        {
+          "id": "1770708548966",
+          "itemName": "Tab",
+          "description": "ok",
+          "account": "input_tax_credits",
+          "quantity": 3,
+          "rate": 15000,
+          "tax": "",
+          "taxAmount": 0,
+          "customerDetails": "none",
+          "amount": 45000
+        }
+      ],
+      "subTotal": 75000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 0,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 75000,
+      "amountPaid": 75000,
+      "balanceDue": 0,
+      "notes": "",
+      "attachments": [],
+      "status": "PAID",
+      "pdfTemplate": "Standard Template",
+      "journalEntries": [],
+      "createdAt": "2026-02-10T07:29:27.179Z",
+      "updatedAt": "2026-02-10T08:50:46.909Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-10T07:29:27.179Z",
+          "action": "created",
+          "description": "Bill created for ₹75,000",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-10T08:50:46.909Z",
+          "action": "payment",
+          "description": "Payment of ₹75,000 recorded",
+          "user": "Admin User"
+        }
+      ],
+      "paymentsRecorded": [
+        {
+          "paymentId": "direct-1770713446909",
+          "paymentNumber": "PM-00086",
+          "amount": 75000,
+          "date": "2026-02-10",
+          "mode": "Cash"
+        }
+      ]
+    },
+    {
+      "id": "1770707589305",
+      "organizationId": "1",
+      "billNumber": "12",
+      "orderNumber": "",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "vendorAddress": {
+        "street1": "mh12",
+        "street2": "pune",
+        "city": "pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "72432",
+        "country": "India",
+        "gstin": ""
+      },
+      "billDate": "2026-02-10",
+      "dueDate": "2026-02-10",
+      "paymentTerms": "Due on Receipt",
+      "reverseCharge": false,
+      "subject": "",
+      "items": [
+        {
+          "id": "1770707576978",
+          "itemName": "Tab",
+          "description": "ok",
+          "account": "input_tax_credits",
+          "quantity": 1,
+          "rate": 15000,
+          "tax": "",
+          "taxAmount": 0,
+          "customerDetails": "1",
+          "amount": 15000
+        }
+      ],
+      "subTotal": 15000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 0,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 15000,
+      "amountPaid": 15000,
+      "balanceDue": 0,
+      "notes": "",
+      "attachments": [],
+      "status": "PAID",
+      "pdfTemplate": "Standard Template",
+      "journalEntries": [],
+      "createdAt": "2026-02-10T07:13:09.305Z",
+      "updatedAt": "2026-02-10T07:29:59.617Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-10T07:13:09.305Z",
+          "action": "created",
+          "description": "Bill created for ₹15,000",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-10T07:13:45.990Z",
+          "action": "payment",
+          "description": "Payment of ₹5,000 recorded",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-10T07:29:59.617Z",
+          "action": "payment",
+          "description": "Payment of ₹10,000 recorded",
+          "user": "Admin User"
+        }
+      ],
+      "paymentsRecorded": [
+        {
+          "paymentId": "direct-1770707625990",
+          "paymentNumber": "PM-00083",
+          "amount": 5000,
+          "date": "2026-02-10",
+          "mode": "Cash"
+        },
+        {
+          "paymentId": "direct-1770708599617",
+          "paymentNumber": "PM-00084",
+          "amount": 10000,
+          "date": "2026-02-10",
+          "mode": "Cash"
+        }
+      ]
+    },
+    {
+      "id": "1770632465879",
+      "organizationId": "1",
+      "billNumber": "11",
+      "orderNumber": "",
+      "vendorId": "1",
+      "vendorName": "Prajwal Kadam",
+      "vendorAddress": {
+        "street1": "Balewadi, Pune",
+        "street2": "Balewadi, Pune",
+        "city": "Pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "413104",
+        "country": "India",
+        "gstin": ""
+      },
+      "billDate": "2026-02-09",
+      "dueDate": "2026-02-09",
+      "paymentTerms": "Due on Receipt",
+      "reverseCharge": false,
+      "subject": "",
+      "items": [
+        {
+          "id": "1770632445943",
+          "itemName": "Tab",
+          "description": "ok",
+          "account": "input_tax_credits",
+          "quantity": 199.99,
+          "rate": 15000,
+          "tax": "",
+          "taxAmount": 0,
+          "customerDetails": "none",
+          "amount": 2999850
+        }
+      ],
+      "subTotal": 2999850,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 0,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 2999850,
+      "amountPaid": 133809,
+      "balanceDue": 2866041,
+      "notes": "",
+      "attachments": [],
+      "status": "PARTIALLY_PAID",
+      "pdfTemplate": "Standard Template",
+      "journalEntries": [],
+      "createdAt": "2026-02-09T10:21:05.879Z",
+      "updatedAt": "2026-02-09T10:22:32.698Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-09T10:21:05.879Z",
+          "action": "created",
+          "description": "Bill created for ₹29,99,850",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-09T10:22:32.698Z",
+          "action": "credit_applied",
+          "description": "Vendor Credit VC-00022 applied: ₹133809.00",
+          "user": "Admin User"
+        }
+      ],
+      "creditsApplied": [
+        {
+          "creditId": "vc-1770631834544",
+          "creditNumber": "VC-00022",
+          "amount": 133809,
+          "appliedDate": "2026-02-09"
+        }
+      ]
+    }
+  ],
+  "nextBillNumber": 17,
+  "accounts": [
+    {
+      "id": "1",
+      "name": "Cost of Goods Sold",
+      "type": "expense"
+    },
+    {
+      "id": "2",
+      "name": "Office Supplies",
+      "type": "expense"
+    },
+    {
+      "id": "3",
+      "name": "Software",
+      "type": "expense"
+    },
+    {
+      "id": "4",
+      "name": "Professional Services",
+      "type": "expense"
+    },
+    {
+      "id": "5",
+      "name": "Utilities",
+      "type": "expense"
+    },
+    {
+      "id": "6",
+      "name": "Rent",
+      "type": "expense"
+    },
+    {
+      "id": "7",
+      "name": "Travel Expense",
+      "type": "expense"
+    },
+    {
+      "id": "8",
+      "name": "Marketing",
+      "type": "expense"
+    }
+  ],
+  "taxes": [
+    {
+      "id": "1",
+      "name": "IGST18",
+      "rate": 18
+    },
+    {
+      "id": "2",
+      "name": "CGST9",
+      "rate": 9
+    },
+    {
+      "id": "3",
+      "name": "SGST9",
+      "rate": 9
+    },
+    {
+      "id": "4",
+      "name": "GST5",
+      "rate": 5
+    },
+    {
+      "id": "5",
+      "name": "GST12",
+      "rate": 12
+    },
+    {
+      "id": "6",
+      "name": "GST28",
+      "rate": 28
+    }
+  ]
+}

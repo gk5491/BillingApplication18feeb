@@ -1,0 +1,22 @@
+{
+  "templates": [
+    {
+      "id": "tpl_invoice_default",
+      "name": "Default Invoice Email",
+      "category": "invoice",
+      "subjectTemplate": "Invoice {{transaction.number}} from {{organization.name}}",
+      "bodyHtmlTemplate": "<p>Hi {{contact.name}},</p><p>Please find attached invoice {{transaction.number}} for {{transaction.total_formatted}}.</p><p>Due date: {{transaction.due_date_formatted}}</p><p>Thank you for your business!</p><p>{{organization.name}}</p>",
+      "bodyTextTemplate": "Hi {{contact.name}},\n\nPlease find attached invoice {{transaction.number}} for {{transaction.total_formatted}}.\n\nDue date: {{transaction.due_date_formatted}}\n\nThank you for your business!\n\n{{organization.name}}",
+      "isDefault": true
+    },
+    {
+      "id": "tpl_statement_default",
+      "name": "Default Statement Email",
+      "category": "statement",
+      "subjectTemplate": "Statement of Accounts from {{organization.name}}",
+      "bodyHtmlTemplate": "<p>Dear {{customer.name}},</p><p>Please find attached your statement of accounts.</p><p>If you have any questions, please let us know.</p><p>Regards,<br>{{organization.name}}</p>",
+      "bodyTextTemplate": "Dear {{customer.name}},\n\nPlease find attached your statement of accounts.\n\nIf you have any questions, please let us know.\n\nRegards,\n{{organization.name}}",
+      "isDefault": true
+    }
+  ]
+}

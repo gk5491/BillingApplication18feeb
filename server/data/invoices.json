@@ -1,0 +1,1498 @@
+{
+  "invoices": [
+    {
+      "id": "1771390309460",
+      "invoiceNumber": "INV-00019",
+      "referenceNumber": "",
+      "date": "2026-02-18",
+      "dueDate": "2026-03-20",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 1,
+          "rate": 12000,
+          "amount": 12000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 27000,
+      "total": 27000,
+      "amountPaid": 0,
+      "balanceDue": 27000,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "23",
+      "sourceNumber": "QT-000023",
+      "createdAt": "2026-02-18T04:51:49.460Z",
+      "updatedAt": "2026-02-18T05:00:11.981Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-18T04:51:49.460Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000023",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-18T05:00:11.882Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-18T05:00:11.981Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-18T05:00:46.453Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹1,000 recorded and awaiting verification",
+          "user": "Customer"
+        }
+      ]
+    },
+    {
+      "id": "1771325093643",
+      "invoiceNumber": "INV-00018",
+      "referenceNumber": "",
+      "date": "2026-02-17",
+      "dueDate": "2026-03-19",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "books",
+          "description": "efsg",
+          "quantity": 3,
+          "rate": 100,
+          "amount": 300,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 300,
+      "total": 300,
+      "amountPaid": 0,
+      "balanceDue": 300,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "22",
+      "sourceNumber": "QT-000022",
+      "createdAt": "2026-02-17T10:44:53.642Z",
+      "updatedAt": "2026-02-17T10:45:36.113Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-17T10:44:53.642Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000022",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-17T10:45:36.113Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-18T03:54:22.868Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹300 recorded and awaiting verification",
+          "user": "Customer"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-18T04:19:43.141Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹300 recorded and awaiting verification",
+          "user": "Customer"
+        },
+        {
+          "id": "5",
+          "timestamp": "2026-02-18T04:19:43.243Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹300 recorded and awaiting verification",
+          "user": "Customer"
+        }
+      ]
+    },
+    {
+      "id": "1771321533414",
+      "invoiceNumber": "INV-00017",
+      "referenceNumber": "",
+      "date": "2026-02-17",
+      "dueDate": "2026-03-19",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 2,
+          "rate": 15000,
+          "amount": 30000,
+          "unit": "set"
+        }
+      ],
+      "subTotal": 30000,
+      "total": 30000,
+      "amountPaid": 0,
+      "balanceDue": 30000,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "20",
+      "sourceNumber": "QT-000020",
+      "createdAt": "2026-02-17T09:45:33.414Z",
+      "updatedAt": "2026-02-17T09:46:33.683Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-17T09:45:33.414Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000020",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-17T09:46:33.683Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771318205236",
+      "invoiceNumber": "INV-00016",
+      "referenceNumber": "",
+      "date": "2026-02-17",
+      "dueDate": "2026-03-19",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 2,
+          "rate": 15000,
+          "amount": 30000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 1,
+          "rate": 12000,
+          "amount": 12000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 42000,
+      "total": 42000,
+      "amountPaid": 0,
+      "balanceDue": 42000,
+      "status": "Draft",
+      "sourceType": "quote",
+      "sourceId": "19",
+      "sourceNumber": "QT-000019",
+      "createdAt": "2026-02-17T08:50:05.236Z",
+      "updatedAt": "2026-02-17T08:50:05.236Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-17T08:50:05.236Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000019",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771315119660",
+      "invoiceNumber": "INV-00015",
+      "referenceNumber": "",
+      "date": "2026-02-17",
+      "dueDate": "2026-03-19",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892"
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892"
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 5,
+          "rate": 12000,
+          "amount": 60000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 75000,
+      "total": 75000,
+      "amountPaid": 0,
+      "balanceDue": 75000,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "18",
+      "sourceNumber": "QT-000018",
+      "createdAt": "2026-02-17T07:58:39.660Z",
+      "updatedAt": "2026-02-17T08:41:56.200Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-17T07:58:39.660Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000018",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-17T07:58:55.928Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-17T08:41:56.200Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-18T03:54:43.476Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹500 recorded and awaiting verification",
+          "user": "Customer"
+        }
+      ]
+    },
+    {
+      "id": "1771244352624",
+      "invoiceNumber": "INV-00014",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 3,
+          "rate": 12000,
+          "amount": 36000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 36000,
+      "total": 36000,
+      "amountPaid": 0,
+      "balanceDue": 36000,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "16",
+      "sourceNumber": "QT-000016",
+      "createdAt": "2026-02-16T12:19:12.624Z",
+      "updatedAt": "2026-02-16T12:19:38.987Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T12:19:12.624Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000016",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-16T12:19:38.938Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-16T12:19:38.987Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771242777740",
+      "invoiceNumber": "INV-00013",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        }
+      ],
+      "subTotal": 15000,
+      "total": 15000,
+      "amountPaid": 0,
+      "balanceDue": 15000,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "15",
+      "sourceNumber": "QT-000015",
+      "createdAt": "2026-02-16T11:52:57.740Z",
+      "updatedAt": "2026-02-16T12:13:50.733Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T11:52:57.740Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000015",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-16T11:53:08.592Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-16T11:54:00.995Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-16T12:13:50.733Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771242282613",
+      "invoiceNumber": "INV-00012",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "Mac",
+          "description": "sffd",
+          "quantity": 1,
+          "rate": 1200000,
+          "amount": 1200000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 1215000,
+      "total": 1215000,
+      "amountPaid": 0,
+      "balanceDue": 1215000,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "14",
+      "sourceNumber": "QT-000014",
+      "createdAt": "2026-02-16T11:44:42.613Z",
+      "updatedAt": "2026-02-16T11:50:31.638Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T11:44:42.613Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000014",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-16T11:44:51.304Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-16T11:44:51.336Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-16T11:50:31.638Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771242185230",
+      "invoiceNumber": "INV-00011",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "name": "Laptop",
+          "quantity": 2,
+          "description": ""
+        },
+        {
+          "name": "digital bharat ",
+          "quantity": 1,
+          "description": ""
+        }
+      ],
+      "total": 0,
+      "amountPaid": 0,
+      "balanceDue": 0,
+      "status": "Draft",
+      "sourceType": "quote",
+      "sourceId": "13",
+      "sourceNumber": "REQ-000013",
+      "createdAt": "2026-02-16T11:43:05.230Z",
+      "updatedAt": "2026-02-16T11:43:05.230Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T11:43:05.230Z",
+          "action": "created",
+          "description": "Invoice created from Quote REQ-000013",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771238700608",
+      "invoiceNumber": "INV-00010",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        }
+      ],
+      "subTotal": 15000,
+      "total": 15000,
+      "amountPaid": 0,
+      "balanceDue": 15000,
+      "status": "Sent",
+      "sourceType": "quote",
+      "sourceId": "15",
+      "sourceNumber": "QT-000015",
+      "createdAt": "2026-02-16T10:45:00.608Z",
+      "updatedAt": "2026-02-16T11:43:28.041Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T10:45:00.608Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000015",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-16T11:43:27.901Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-16T11:43:28.041Z",
+          "action": "sent",
+          "description": "Invoice has been sent",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771238692973",
+      "invoiceNumber": "INV-00009",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        }
+      ],
+      "subTotal": 15000,
+      "total": 15000,
+      "amountPaid": 0,
+      "balanceDue": 15000,
+      "status": "Draft",
+      "sourceType": "quote",
+      "sourceId": "15",
+      "sourceNumber": "QT-000015",
+      "createdAt": "2026-02-16T10:44:52.973Z",
+      "updatedAt": "2026-02-16T10:44:52.973Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T10:44:52.973Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000015",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771236293544",
+      "invoiceNumber": "INV-00008",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "Mac",
+          "description": "sffd",
+          "quantity": 1,
+          "rate": 1200000,
+          "amount": 1200000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 1215000,
+      "total": 1215000,
+      "amountPaid": 0,
+      "balanceDue": 1215000,
+      "status": "Draft",
+      "sourceType": "quote",
+      "sourceId": "14",
+      "sourceNumber": "QT-000014",
+      "createdAt": "2026-02-16T10:04:53.544Z",
+      "updatedAt": "2026-02-16T10:04:53.544Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T10:04:53.544Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000014",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771236291488",
+      "invoiceNumber": "INV-00007",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "Mac",
+          "description": "sffd",
+          "quantity": 1,
+          "rate": 1200000,
+          "amount": 1200000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 1215000,
+      "total": 1215000,
+      "amountPaid": 0,
+      "balanceDue": 1215000,
+      "status": "Draft",
+      "sourceType": "quote",
+      "sourceId": "14",
+      "sourceNumber": "QT-000014",
+      "createdAt": "2026-02-16T10:04:51.488Z",
+      "updatedAt": "2026-02-16T10:04:51.488Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T10:04:51.488Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000014",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771236288444",
+      "invoiceNumber": "INV-00006",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "Mac",
+          "description": "sffd",
+          "quantity": 1,
+          "rate": 1200000,
+          "amount": 1200000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 1215000,
+      "total": 1215000,
+      "amountPaid": 0,
+      "balanceDue": 1215000,
+      "status": "Draft",
+      "sourceType": "quote",
+      "sourceId": "14",
+      "sourceNumber": "QT-000014",
+      "createdAt": "2026-02-16T10:04:48.444Z",
+      "updatedAt": "2026-02-16T10:04:48.444Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T10:04:48.444Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000014",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1771232347760",
+      "invoiceNumber": "INV-00005",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "dueDate": "2026-03-18",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {},
+      "shippingAddress": {},
+      "salesperson": "Sujay",
+      "placeOfSupply": "",
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1771231762978",
+          "name": "Mac",
+          "description": "sffd",
+          "quantity": 1,
+          "unit": "",
+          "rate": 1200000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 18,
+          "taxName": "GST18",
+          "amount": 1200000
+        }
+      ],
+      "subTotal": 1200000,
+      "shippingCharges": 0,
+      "cgst": 108000,
+      "sgst": 108000,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 1416000,
+      "amountPaid": 0,
+      "balanceDue": 1416000,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "PENDING",
+      "sourceType": "quote",
+      "sourceId": "1771232318189",
+      "sourceNumber": "QT-000012",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-16T08:59:07.760Z",
+      "updatedAt": "2026-02-16T08:59:07.760Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T08:59:07.760Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000012",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770791755307",
+      "invoiceNumber": "INV-00004",
+      "referenceNumber": "",
+      "date": "2026-02-11",
+      "dueDate": "2026-03-13",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {},
+      "shippingAddress": {},
+      "salesperson": "",
+      "placeOfSupply": "",
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "unit": "",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 18,
+          "taxName": "GST18",
+          "amount": 15000
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "cgst": 1350,
+      "sgst": 1350,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 17700,
+      "amountPaid": 700,
+      "balanceDue": 17000,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "PARTIALLY_PAID",
+      "sourceType": "quote",
+      "sourceId": "1770791750237",
+      "sourceNumber": "QT-000002",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-11T06:35:55.307Z",
+      "updatedAt": "2026-02-11T06:36:05.877Z",
+      "createdBy": "Admin User",
+      "payments": [
+        {
+          "id": "1770791765877",
+          "date": "2026-02-11T06:35:00.000Z",
+          "amount": 500,
+          "paymentMode": "cash",
+          "reference": "",
+          "notes": ""
+        }
+      ],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-11T06:35:55.307Z",
+          "action": "created",
+          "description": "Invoice created from Quote QT-000002",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-11T06:36:05.877Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹500 recorded",
+          "user": "Admin User"
+        },
+        {
+          "id": "1770791814911.8699",
+          "timestamp": "2026-02-11T06:36:54.911Z",
+          "action": "credit_applied",
+          "description": "Applied ₹200 from Credit Note CN-00004",
+          "user": "Admin User"
+        }
+      ],
+      "creditsApplied": [
+        {
+          "creditNoteId": "1770791805390",
+          "creditNoteNumber": "CN-00004",
+          "amount": 200,
+          "appliedDate": "2026-02-11T06:36:54.911Z"
+        }
+      ]
+    },
+    {
+      "id": "1770715122801",
+      "organizationId": "1",
+      "invoiceNumber": "INV-00003",
+      "referenceNumber": "",
+      "date": "2026-02-10",
+      "dueDate": "2026-03-12",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "salesperson": "",
+      "placeOfSupply": "27 - Maharashtra",
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "0.9088721636752037",
+          "itemId": "0.9088721636752037",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "unit": "pcs",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 2700,
+          "taxName": "GST18",
+          "amount": 17700
+        },
+        {
+          "id": "0.9206540675409755",
+          "itemId": "0.9206540675409755",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 1,
+          "unit": "pcs",
+          "rate": 12000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 2160,
+          "taxName": "GST18",
+          "amount": 14160
+        }
+      ],
+      "subTotal": 27000,
+      "shippingCharges": 0,
+      "cgst": 2430,
+      "sgst": 2430,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 31860,
+      "amountPaid": 20400,
+      "balanceDue": 11460,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "PARTIALLY_PAID",
+      "sourceType": null,
+      "sourceId": null,
+      "sourceNumber": null,
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-10T09:18:42.801Z",
+      "updatedAt": "2026-02-10T10:53:12.672Z",
+      "createdBy": "Admin User",
+      "payments": [],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-10T09:18:42.801Z",
+          "action": "created",
+          "description": "Invoice created for ₹31,860",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-10T09:21:13.568Z",
+          "action": "credits_applied",
+          "description": "Credits of ₹17,700 applied from 1 source(s)",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-10T09:21:54.072Z",
+          "action": "credits_applied",
+          "description": "Credits of ₹160 applied from 1 source(s)",
+          "user": "Admin User"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-10T09:22:27.009Z",
+          "action": "credits_applied",
+          "description": "Credits of ₹2,000 applied from 1 source(s)",
+          "user": "Admin User"
+        },
+        {
+          "id": "5",
+          "timestamp": "2026-02-10T10:53:12.672Z",
+          "action": "credits_applied",
+          "description": "Credits of ₹540 applied from 1 source(s)",
+          "user": "Admin User"
+        },
+        {
+          "id": "6",
+          "timestamp": "2026-02-18T03:55:27.054Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹11,460 recorded and awaiting verification",
+          "user": "Customer"
+        },
+        {
+          "id": "7",
+          "timestamp": "2026-02-18T03:55:33.763Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹11,460 recorded and awaiting verification",
+          "user": "Customer"
+        },
+        {
+          "id": "8",
+          "timestamp": "2026-02-18T04:20:41.231Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹460 recorded and awaiting verification",
+          "user": "Customer"
+        }
+      ],
+      "creditsApplied": [
+        {
+          "id": "ca-1770715273568-iv00ah8h1",
+          "sourceId": "1770627928055",
+          "sourceType": "credit_note",
+          "sourceNumber": "CN-00001",
+          "amount": 17700,
+          "appliedDate": "2026-02-10T09:21:13.568Z",
+          "appliedBy": "Admin User"
+        },
+        {
+          "id": "ca-1770715314072-nc2qn47sv",
+          "sourceId": "1770714559367",
+          "sourceType": "credit_note",
+          "sourceNumber": "CN-00002",
+          "amount": 160,
+          "appliedDate": "2026-02-10T09:21:54.072Z",
+          "appliedBy": "Admin User"
+        },
+        {
+          "id": "ca-1770715347009-zorlyc854",
+          "sourceId": "pr-1770367792075",
+          "sourceType": "payment",
+          "sourceNumber": "85",
+          "amount": 2000,
+          "appliedDate": "2026-02-10T09:22:27.009Z",
+          "appliedBy": "Admin User"
+        },
+        {
+          "id": "ca-1770720792672-s5rfcuolg",
+          "sourceId": "1770714559367",
+          "sourceType": "credit_note",
+          "sourceNumber": "CN-00002",
+          "amount": 540,
+          "appliedDate": "2026-02-10T10:53:12.672Z",
+          "appliedBy": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770367578832",
+      "organizationId": "1",
+      "invoiceNumber": "INV-00002",
+      "referenceNumber": "",
+      "date": "2026-02-06",
+      "dueDate": "2026-03-08",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "salesperson": "Sujay",
+      "placeOfSupply": "27 - Maharashtra",
+      "paymentTerms": "Net 30",
+      "items": [
+        {
+          "id": "0.7188949594961958",
+          "itemId": "0.7188949594961958",
+          "name": "Tab",
+          "description": "ok",
+          "quantity": 1,
+          "unit": "pcs",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 2700,
+          "taxName": "GST18",
+          "amount": 17700
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "cgst": 1350,
+      "sgst": 1350,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 17700,
+      "amountPaid": 17700,
+      "balanceDue": 0,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "PAID",
+      "sourceType": null,
+      "sourceId": null,
+      "sourceNumber": null,
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-06T08:46:18.832Z",
+      "updatedAt": "2026-02-06T08:49:52.073Z",
+      "createdBy": "Admin User",
+      "payments": [
+        {
+          "id": "1770367792073",
+          "date": "2026-02-06T08:49:00.000Z",
+          "amount": 20000,
+          "paymentMode": "cash",
+          "reference": "",
+          "notes": ""
+        }
+      ],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-06T08:46:18.832Z",
+          "action": "created",
+          "description": "Invoice created for ₹17,700",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-06T08:49:52.073Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹20,000 recorded",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770367532995",
+      "organizationId": "1",
+      "invoiceNumber": "INV-00001",
+      "referenceNumber": "",
+      "date": "2026-02-06",
+      "dueDate": "2026-02-06",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "salesperson": "",
+      "placeOfSupply": "",
+      "paymentTerms": "Net 15",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "name": "Tab",
+          "description": "ok",
+          "hsnSac": "12312232",
+          "quantity": 1,
+          "unit": "pcs",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 0,
+          "taxName": "none",
+          "amount": 15000,
+          "ordered": 1,
+          "invoicedQty": 0,
+          "invoiceStatus": "Not Invoiced"
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "cgst": 0,
+      "sgst": 0,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 15000,
+      "amountPaid": 15000,
+      "balanceDue": 0,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "PAID",
+      "sourceType": "sales_order",
+      "sourceId": "1770367509328",
+      "sourceNumber": null,
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-06T08:45:32.994Z",
+      "updatedAt": "2026-02-09T07:39:28.819Z",
+      "createdBy": "Admin User",
+      "payments": [
+        {
+          "id": "1770622768819",
+          "date": "2026-02-09T07:39:00.000Z",
+          "amount": 15000,
+          "paymentMode": "cash",
+          "reference": "",
+          "notes": ""
+        }
+      ],
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-06T08:45:32.994Z",
+          "action": "created",
+          "description": "Invoice created for ₹15,000",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-09T07:39:28.819Z",
+          "action": "payment_recorded",
+          "description": "Payment of ₹15,000 recorded",
+          "user": "Admin User"
+        }
+      ]
+    }
+  ],
+  "nextInvoiceNumber": 20
+}

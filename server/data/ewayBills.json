@@ -1,0 +1,115 @@
+{
+  "ewayBills": [
+    {
+      "id": "ewb-1770627290366",
+      "ewayBillNumber": "EWB-000010",
+      "documentType": "delivery_challans",
+      "transactionSubType": "supply",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "customerGstin": "",
+      "documentNumber": "",
+      "documentId": "",
+      "date": "2026-02-09",
+      "expiryDate": "2026-02-24",
+      "transactionType": "regular",
+      "dispatchFrom": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "billFrom": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "billTo": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shipTo": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "placeOfDelivery": "",
+      "transporter": "transporter-1766464902847",
+      "distance": 10,
+      "modeOfTransportation": "road",
+      "vehicleType": "regular",
+      "vehicleNo": "mh 12 py 3114",
+      "transporterDocNo": "1",
+      "transporterDocDate": "2026-02-10",
+      "items": [],
+      "total": 0,
+      "status": "GENERATED",
+      "createdAt": "2026-02-09T08:54:50.366Z",
+      "updatedAt": "2026-02-09T08:54:50.366Z"
+    },
+    {
+      "id": "ewb-1770700530075",
+      "ewayBillNumber": "EWB-000011",
+      "documentType": "invoices",
+      "transactionSubType": "supply",
+      "customerId": "",
+      "customerName": "",
+      "customerGstin": "",
+      "documentNumber": "",
+      "documentId": "",
+      "date": "2026-02-10",
+      "expiryDate": "2026-02-25",
+      "transactionType": "regular",
+      "dispatchFrom": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "billFrom": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "billTo": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "shipTo": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "placeOfDelivery": "",
+      "transporter": "",
+      "distance": 0,
+      "modeOfTransportation": "road",
+      "vehicleType": "regular",
+      "vehicleNo": "",
+      "transporterDocNo": "",
+      "transporterDocDate": "",
+      "items": [],
+      "total": 0,
+      "status": "NOT_GENERATED",
+      "createdAt": "2026-02-10T05:15:30.075Z",
+      "updatedAt": "2026-02-10T05:15:30.075Z"
+    }
+  ],
+  "nextEWayBillNumber": 12
+}

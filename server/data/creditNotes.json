@@ -1,0 +1,300 @@
+{
+  "creditNotes": [
+    {
+      "id": "1770791805390",
+      "creditNoteNumber": "CN-00004",
+      "referenceNumber": "",
+      "date": "2026-02-11",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "invoiceId": "1770791755307",
+      "invoiceNumber": "INV-00004",
+      "reason": "sales_return",
+      "salesperson": "",
+      "subject": "Credit Note for Invoice #INV-00004",
+      "billingAddress": {},
+      "gstin": "27ABCDE1234F1Z5",
+      "placeOfSupply": "Maharashtra",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "name": "Laptop",
+          "description": "",
+          "account": "sales",
+          "quantity": 1,
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 18,
+          "taxName": "GST18",
+          "amount": 15000
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "tdsType": "TDS",
+      "tdsAmount": 0,
+      "cgst": 1350,
+      "sgst": 1350,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 17700,
+      "creditsRemaining": 17500,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "OPEN",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-11T06:36:45.390Z",
+      "updatedAt": "2026-02-11T06:36:45.390Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-11T06:36:45.390Z",
+          "action": "created",
+          "description": "Credit Note created for ₹17,700",
+          "user": "Admin User"
+        },
+        {
+          "id": "1770791814911.8364",
+          "timestamp": "2026-02-11T06:36:54.911Z",
+          "action": "credits_applied",
+          "description": "Applied ₹200 to invoices",
+          "user": "Admin User"
+        }
+      ],
+      "invoicesApplied": [
+        {
+          "invoiceId": "1770791755307",
+          "invoiceNumber": "INV-00004",
+          "amount": 200,
+          "appliedDate": "2026-02-11T06:36:54.911Z"
+        }
+      ]
+    },
+    {
+      "id": "1770728046465",
+      "creditNoteNumber": "CN-00003",
+      "referenceNumber": "",
+      "date": "2026-02-10",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "invoiceId": "",
+      "invoiceNumber": "",
+      "reason": "",
+      "salesperson": "",
+      "subject": "",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "gstin": "",
+      "placeOfSupply": "Maharashtra",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "name": "Laptop",
+          "description": "",
+          "account": "sales",
+          "quantity": 1,
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 0,
+          "taxName": "none",
+          "amount": 15000
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "tdsType": "TDS",
+      "tdsAmount": 0,
+      "cgst": 0,
+      "sgst": 0,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 15000,
+      "creditsRemaining": 0,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "OPEN",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-10T12:54:06.465Z",
+      "updatedAt": "2026-02-10T12:54:18.610Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-10T12:54:06.465Z",
+          "action": "created",
+          "description": "Credit Note created for ₹0",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-10T12:54:18.610Z",
+          "action": "updated",
+          "description": "Credit Note has been updated",
+          "user": "Admin User"
+        }
+      ],
+      "invoiceType": "Regular",
+      "originalInvoiceTotal": 0
+    },
+    {
+      "id": "1770714559367",
+      "creditNoteNumber": "CN-00002",
+      "referenceNumber": "",
+      "date": "2026-02-10",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "invoiceId": "1770367578832",
+      "invoiceNumber": "INV-00002",
+      "reason": "sales_return",
+      "salesperson": "Sujay",
+      "subject": "Credit Note for Invoice #INV-00002",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "gstin": "",
+      "placeOfSupply": "Maharashtra",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "0.7188949594961958",
+          "name": "Tab",
+          "description": "ok",
+          "account": "sales",
+          "quantity": 1,
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 18,
+          "taxName": "GST18",
+          "amount": 17700
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "tdsType": "TDS",
+      "tdsAmount": 0,
+      "cgst": 1350,
+      "sgst": 1350,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 17700,
+      "creditsRemaining": 17000,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "OPEN",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-10T09:09:19.367Z",
+      "updatedAt": "2026-02-10T09:09:19.367Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-10T09:09:19.367Z",
+          "action": "created",
+          "description": "Credit Note created for ₹17,700",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-10T09:21:54.072Z",
+          "action": "credits_applied",
+          "description": "₹160 applied to Invoice INV-00003",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-10T10:53:12.672Z",
+          "action": "credits_applied",
+          "description": "₹540 applied to Invoice INV-00003",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770627928055",
+      "creditNoteNumber": "CN-00001",
+      "referenceNumber": "",
+      "date": "2026-02-09",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "invoiceId": "1770367578832",
+      "invoiceNumber": "INV-00002",
+      "reason": "sales_return",
+      "salesperson": "Sujay",
+      "subject": "Credit Note for Invoice #INV-00002",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "gstin": "",
+      "placeOfSupply": "Maharashtra",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "0.7188949594961958",
+          "name": "Tab",
+          "description": "ok",
+          "account": "sales",
+          "quantity": 1,
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 18,
+          "taxName": "GST18",
+          "amount": 17700
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "tdsType": "TDS",
+      "tdsAmount": 0,
+      "cgst": 1350,
+      "sgst": 1350,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 17700,
+      "creditsRemaining": 0,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "CLOSED",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-09T09:05:28.055Z",
+      "updatedAt": "2026-02-09T09:05:28.055Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-09T09:05:28.055Z",
+          "action": "created",
+          "description": "Credit Note created for ₹17,700",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-10T09:21:13.568Z",
+          "action": "credits_applied",
+          "description": "₹17,700 applied to Invoice INV-00003",
+          "user": "Admin User"
+        }
+      ]
+    }
+  ],
+  "nextCreditNoteNumber": 5
+}

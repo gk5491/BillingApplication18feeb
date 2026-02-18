@@ -1,0 +1,61 @@
+{
+  "itemRequests": [
+    {
+      "id": "1",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "customerEmail": "customer",
+      "companyName": "",
+      "contactNumber": "932048234",
+      "itemName": "Mac",
+      "description": "sffd",
+      "quantity": "11",
+      "status": "Approved",
+      "createdAt": "2026-02-16T07:29:16.700Z",
+      "rejectionReason": ""
+    },
+    {
+      "id": "2",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "customerEmail": "customer",
+      "companyName": "",
+      "contactNumber": "932048234",
+      "itemName": "Mac",
+      "description": "wdew",
+      "quantity": "14",
+      "status": "Rejected",
+      "createdAt": "2026-02-16T08:48:51.793Z",
+      "rejectionReason": "not available"
+    },
+    {
+      "id": "3",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "customerEmail": "ganeshkale5491@gmail.com",
+      "companyName": "TCS",
+      "contactNumber": "4214121412",
+      "itemName": "books",
+      "description": "efsg",
+      "quantity": "31",
+      "status": "Approved",
+      "createdAt": "2026-02-17T10:41:27.322Z",
+      "rejectionReason": ""
+    },
+    {
+      "id": "4",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "customerEmail": "Sujay.Palande@cybaemtech.com",
+      "companyName": "Prajtech",
+      "contactNumber": "0987654321",
+      "itemName": "Billing application software",
+      "description": "application",
+      "quantity": "1",
+      "status": "Approved",
+      "createdAt": "2026-02-18T04:25:20.591Z",
+      "rejectionReason": ""
+    }
+  ],
+  "nextRequestId": 5
+}

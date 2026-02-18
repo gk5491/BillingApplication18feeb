@@ -1,0 +1,416 @@
+{
+  "purchaseOrders": [
+    {
+      "id": "1770791894014",
+      "purchaseOrderNumber": "PO-2025-0008",
+      "referenceNumber": "",
+      "date": "2026-02-11",
+      "deliveryDate": "",
+      "vendorId": "3",
+      "vendorName": "Ganesh K",
+      "vendorAddress": {
+        "street1": "mh12",
+        "street2": "pune",
+        "city": "pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "72432",
+        "countryRegion": "India"
+      },
+      "deliveryAddress": {
+        "attention": "",
+        "street1": "",
+        "street2": "",
+        "city": "",
+        "state": "",
+        "pinCode": "",
+        "countryRegion": "India"
+      },
+      "deliveryAddressType": "organization",
+      "paymentTerms": "Due on Receipt",
+      "shipmentPreference": "",
+      "reverseCharge": false,
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770714286345",
+          "itemName": "digital bharat ",
+          "description": "",
+          "account": "cost_of_goods",
+          "quantity": 1,
+          "rate": 17000,
+          "tax": "gst_18",
+          "taxAmount": 3060,
+          "amount": 20060
+        }
+      ],
+      "subTotal": 17000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 3060,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 20060,
+      "notes": "",
+      "termsAndConditions": "",
+      "attachments": [],
+      "status": "ISSUED",
+      "receiveStatus": "YET TO BE RECEIVED",
+      "billedStatus": "BILLED",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-11T06:38:14.014Z",
+      "updatedAt": "2026-02-11T06:38:26.253Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-11T06:38:14.014Z",
+          "action": "created",
+          "description": "Purchase Order created for ₹20,060",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-11T06:38:26.253Z",
+          "action": "converted_to_bill",
+          "description": "Purchase Order converted to Bill",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770697271063",
+      "purchaseOrderNumber": "PO-2025-0007",
+      "referenceNumber": "",
+      "date": "2026-02-10",
+      "deliveryDate": "",
+      "vendorId": "1",
+      "vendorName": "Prajwal K",
+      "vendorAddress": {
+        "street1": "Balewadi, Pune",
+        "street2": "Balewadi, Pune",
+        "city": "Pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "413104",
+        "countryRegion": "India"
+      },
+      "deliveryAddress": {
+        "attention": "",
+        "street1": "",
+        "street2": "",
+        "city": "",
+        "state": "",
+        "pinCode": "",
+        "countryRegion": "India"
+      },
+      "deliveryAddressType": "organization",
+      "paymentTerms": "Due on Receipt",
+      "shipmentPreference": "",
+      "reverseCharge": false,
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "itemName": "Tab",
+          "description": "ok",
+          "account": "input_tax_credits",
+          "quantity": 60,
+          "rate": 15000,
+          "tax": "gst_18",
+          "taxAmount": 162000,
+          "amount": 1062000
+        }
+      ],
+      "subTotal": 900000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 162000,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 1062000,
+      "notes": "",
+      "termsAndConditions": "",
+      "attachments": [],
+      "status": "ISSUED",
+      "receiveStatus": "YET TO BE RECEIVED",
+      "billedStatus": "YET TO BE BILLED",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-10T04:21:11.063Z",
+      "updatedAt": "2026-02-10T04:21:11.063Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-10T04:21:11.063Z",
+          "action": "created",
+          "description": "Purchase Order created for ₹10,62,000",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770366491443",
+      "purchaseOrderNumber": "PO-2025-0006",
+      "referenceNumber": "",
+      "date": "2026-02-06",
+      "deliveryDate": "2026-02-06",
+      "vendorId": "1",
+      "vendorName": "Prajwal Kadam",
+      "vendorAddress": {},
+      "deliveryAddress": {
+        "attention": "",
+        "street1": "",
+        "street2": "",
+        "city": "",
+        "state": "",
+        "pinCode": "",
+        "countryRegion": "India"
+      },
+      "deliveryAddressType": "organization",
+      "paymentTerms": "Net 45",
+      "shipmentPreference": "Express Shipping",
+      "reverseCharge": false,
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "itemName": "Tab",
+          "description": "ok",
+          "account": "input_tax_credits",
+          "quantity": 1,
+          "rate": 15000,
+          "tax": "gst_18",
+          "taxAmount": 2700,
+          "amount": 17700
+        }
+      ],
+      "subTotal": 15000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 2700,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 17700,
+      "notes": "",
+      "termsAndConditions": "",
+      "attachments": [],
+      "status": "ISSUED",
+      "receiveStatus": "YET TO BE RECEIVED",
+      "billedStatus": "BILLED",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-06T08:28:11.443Z",
+      "updatedAt": "2026-02-06T08:29:34.887Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-06T08:28:11.443Z",
+          "action": "created",
+          "description": "Purchase Order created for ₹17,700",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-06T08:29:34.887Z",
+          "action": "converted_to_bill",
+          "description": "Purchase Order converted to Bill",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770364813871",
+      "purchaseOrderNumber": "PO-2025-0005",
+      "referenceNumber": "",
+      "date": "2026-02-06",
+      "deliveryDate": "",
+      "vendorId": "1",
+      "vendorName": "Prajwal Kadam",
+      "vendorAddress": {},
+      "deliveryAddress": {
+        "attention": "",
+        "street1": "",
+        "street2": "",
+        "city": "",
+        "state": "",
+        "pinCode": "",
+        "countryRegion": "India"
+      },
+      "deliveryAddressType": "organization",
+      "paymentTerms": "Net 30",
+      "shipmentPreference": "Overnight Shipping",
+      "reverseCharge": false,
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "itemName": "Tab",
+          "description": "ok",
+          "account": "",
+          "quantity": 5,
+          "rate": 15000,
+          "tax": "gst_18",
+          "taxAmount": 13500,
+          "amount": 88500
+        }
+      ],
+      "subTotal": 75000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 13500,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 88500,
+      "notes": "",
+      "termsAndConditions": "",
+      "attachments": [],
+      "status": "ISSUED",
+      "receiveStatus": "YET TO BE RECEIVED",
+      "billedStatus": "BILLED",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-06T08:00:13.871Z",
+      "updatedAt": "2026-02-06T08:00:33.692Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-06T08:00:13.871Z",
+          "action": "created",
+          "description": "Purchase Order created for ₹88,500",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-06T08:00:33.692Z",
+          "action": "converted_to_bill",
+          "description": "Purchase Order converted to Bill",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770359662664",
+      "purchaseOrderNumber": "PO-2025-0004",
+      "referenceNumber": "123",
+      "date": "2026-02-06",
+      "deliveryDate": "2026-02-27",
+      "vendorId": "1",
+      "vendorName": "Prajwal Kadam",
+      "vendorAddress": {},
+      "deliveryAddress": {
+        "attention": "",
+        "street1": "",
+        "street2": "",
+        "city": "",
+        "state": "",
+        "pinCode": "",
+        "countryRegion": "India"
+      },
+      "deliveryAddressType": "organization",
+      "paymentTerms": "Due on Receipt",
+      "shipmentPreference": "Express Shipping",
+      "reverseCharge": false,
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "itemName": "Tab",
+          "description": "ok",
+          "account": "input_tax_credits",
+          "quantity": 1,
+          "rate": 15000,
+          "tax": "gst_18",
+          "taxAmount": 2700,
+          "amount": 17700
+        }
+      ],
+      "subTotal": 15000,
+      "discountType": "percent",
+      "discountValue": 0,
+      "discountAmount": 0,
+      "taxType": "TDS",
+      "taxCategory": "none",
+      "taxAmount": 2700,
+      "adjustment": 0,
+      "adjustmentDescription": "",
+      "total": 17700,
+      "notes": "",
+      "termsAndConditions": "",
+      "attachments": [],
+      "status": "RECEIVED",
+      "receiveStatus": "RECEIVED",
+      "billedStatus": "BILLED",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-06T06:34:22.664Z",
+      "updatedAt": "2026-02-06T07:58:44.621Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-06T06:34:22.664Z",
+          "action": "created",
+          "description": "Purchase Order created for ₹17,700",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-06T06:35:42.467Z",
+          "action": "converted_to_bill",
+          "description": "Purchase Order converted to Bill",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-06T07:57:47.953Z",
+          "action": "updated",
+          "description": "Purchase Order has been updated",
+          "user": "Admin User"
+        },
+        {
+          "id": "4",
+          "timestamp": "2026-02-06T07:58:44.621Z",
+          "action": "received",
+          "description": "Purchase Order has been received",
+          "user": "Admin User"
+        }
+      ],
+      "gstTreatment": "",
+      "sourceOfSupply": "MH - Maharashtra",
+      "destinationOfSupply": "MH - Maharashtra",
+      "vendorBillingAddress": {
+        "street1": "Balewadi, Pune",
+        "street2": "Balewadi, Pune",
+        "city": "Pune",
+        "state": "[MH] - Maharashtra",
+        "pinCode": "413104",
+        "countryRegion": "India"
+      },
+      "organizationDetails": {
+        "name": "Rohan Bhosale",
+        "address": "Hinjewadi - Wakad road\nHinjewadi\nPune, Maharashtra\nIndia, 411057"
+      },
+      "selectedCustomer": null,
+      "customerSearchQuery": "",
+      "subject": "ok fine",
+      "tcsType": "TCS",
+      "tcsCategory": "none",
+      "tcsValue": 0,
+      "tdsValue": 0,
+      "tcsAmount": 0,
+      "tdsAmount": 0,
+      "balanceDue": 17700
+    }
+  ],
+  "nextPurchaseOrderNumber": 9
+}

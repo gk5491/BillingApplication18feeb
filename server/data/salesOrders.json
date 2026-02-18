@@ -1,0 +1,174 @@
+{
+  "salesOrders": [
+    {
+      "id": "1770367509328",
+      "organizationId": "1",
+      "salesOrderNumber": "SO-00002",
+      "referenceNumber": "1201",
+      "date": "2026-02-06",
+      "expectedShipmentDate": "2026-02-27",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "paymentTerms": "Net 15",
+      "deliveryMethod": "Standard Delivery",
+      "salesperson": "Sujay",
+      "placeOfSupply": "maharashtra",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "name": "Tab",
+          "description": "ok",
+          "hsnSac": "12312232",
+          "quantity": 1,
+          "unit": "pcs",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 0,
+          "taxName": "none",
+          "amount": 15000,
+          "ordered": 1,
+          "invoicedQty": 1,
+          "invoiceStatus": "Invoiced"
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "tdsType": "",
+      "tdsAmount": 0,
+      "cgst": 0,
+      "sgst": 0,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 15000,
+      "customerNotes": "Thanks for your business.",
+      "termsAndConditions": "",
+      "orderStatus": "CLOSED",
+      "invoiceStatus": "Invoiced",
+      "paymentStatus": "Paid",
+      "shipmentStatus": "Pending",
+      "invoices": [
+        {
+          "id": "1770367532995",
+          "invoiceNumber": "INV-00001",
+          "date": "2026-02-06",
+          "status": "PAID",
+          "amount": 15000,
+          "balanceDue": 0
+        }
+      ],
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-06T08:45:09.328Z",
+      "updatedAt": "2026-02-06T08:45:32.994Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-06T08:45:09.328Z",
+          "action": "created",
+          "description": "Sales Order created for ₹15,000",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-06T08:45:32.994Z",
+          "action": "invoiced",
+          "description": "Invoice INV-00001 created",
+          "user": "Admin User"
+        }
+      ]
+    },
+    {
+      "id": "1770367382966",
+      "salesOrderNumber": "SO-00001",
+      "referenceNumber": "123",
+      "date": "2026-02-06",
+      "expectedShipmentDate": "",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "paymentTerms": "Due on Receipt",
+      "deliveryMethod": "",
+      "salesperson": "Sujay",
+      "placeOfSupply": "",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "name": "Tab",
+          "description": "ok",
+          "quantity": 1,
+          "unit": "",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 5,
+          "taxName": "GST5",
+          "amount": 15000,
+          "invoicedQty": 0,
+          "invoiceStatus": "Not Invoiced"
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "cgst": 375,
+      "sgst": 375,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 15750,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "orderStatus": "CONFIRMED",
+      "invoiceStatus": "Not Invoiced",
+      "paymentStatus": "Unpaid",
+      "shipmentStatus": "Pending",
+      "invoices": [],
+      "sourceType": "quote",
+      "sourceId": "1770367332795",
+      "sourceNumber": "QT-000001",
+      "pdfTemplate": "Standard Template",
+      "createdAt": "2026-02-06T08:43:02.965Z",
+      "updatedAt": "2026-02-06T08:43:02.965Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-06T08:43:02.965Z",
+          "action": "created",
+          "description": "Sales Order created from Quote QT-000001",
+          "user": "Admin User"
+        }
+      ]
+    }
+  ],
+  "nextSalesOrderNumber": 3,
+  "nextInvoiceNumber": 26
+}

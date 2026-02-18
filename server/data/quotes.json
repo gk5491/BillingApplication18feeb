@@ -1,0 +1,804 @@
+{
+  "quotes": [
+    {
+      "id": "1771232318189",
+      "quoteNumber": "QT-000012",
+      "referenceNumber": "",
+      "date": "2026-02-16",
+      "expiryDate": "2026-02-10",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {},
+      "shippingAddress": {},
+      "salesperson": "Sujay",
+      "projectName": "",
+      "subject": "",
+      "placeOfSupply": "",
+      "pdfTemplate": "Standard Template",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1771231762978",
+          "name": "Mac",
+          "description": "sffd",
+          "quantity": 1,
+          "unit": "",
+          "rate": 1200000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 18,
+          "taxName": "GST18",
+          "amount": 1200000
+        }
+      ],
+      "subTotal": 1200000,
+      "shippingCharges": 0,
+      "tdsType": "",
+      "tdsAmount": 0,
+      "cgst": 108000,
+      "sgst": 108000,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 1416000,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "CONVERTED",
+      "emailRecipients": [],
+      "createdAt": "2026-02-16T08:58:38.189Z",
+      "updatedAt": "2026-02-16T08:59:07.760Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T08:58:38.189Z",
+          "action": "created",
+          "description": "Quote created for ₹14,16,000",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-16T08:59:07.760Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00005",
+          "user": "Admin User",
+          "link": "/invoices/1771232347760"
+        }
+      ],
+      "convertedTo": "invoice"
+    },
+    {
+      "id": "1770791750237",
+      "quoteNumber": "QT-000002",
+      "referenceNumber": "",
+      "date": "2026-02-11",
+      "expiryDate": "",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {},
+      "shippingAddress": {},
+      "salesperson": "",
+      "projectName": "",
+      "subject": "",
+      "placeOfSupply": "",
+      "pdfTemplate": "Standard Template",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "unit": "",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 18,
+          "taxName": "GST18",
+          "amount": 15000
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "tdsType": "",
+      "tdsAmount": 0,
+      "cgst": 1350,
+      "sgst": 1350,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 17700,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "CONVERTED",
+      "emailRecipients": [],
+      "createdAt": "2026-02-11T06:35:50.237Z",
+      "updatedAt": "2026-02-11T06:35:55.307Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-11T06:35:50.237Z",
+          "action": "created",
+          "description": "Quote created for ₹17,700",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-11T06:35:55.307Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00004",
+          "user": "Admin User",
+          "link": "/invoices/1770791755307"
+        }
+      ],
+      "convertedTo": "invoice"
+    },
+    {
+      "id": "1770367332795",
+      "quoteNumber": "QT-000001",
+      "referenceNumber": "123",
+      "date": "2026-02-06",
+      "expiryDate": "2026-02-06",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "salesperson": "Sujay",
+      "projectName": "",
+      "subject": "ok ",
+      "placeOfSupply": "",
+      "pdfTemplate": "Standard Template",
+      "items": [
+        {
+          "id": "1",
+          "itemId": "1770351067854",
+          "name": "Tab",
+          "description": "ok",
+          "quantity": 1,
+          "unit": "",
+          "rate": 15000,
+          "discount": 0,
+          "discountType": "percentage",
+          "tax": 5,
+          "taxName": "GST5",
+          "amount": 15000
+        }
+      ],
+      "subTotal": 15000,
+      "shippingCharges": 0,
+      "tdsType": "",
+      "tdsAmount": 0,
+      "cgst": 375,
+      "sgst": 375,
+      "igst": 0,
+      "adjustment": 0,
+      "total": 15750,
+      "customerNotes": "",
+      "termsAndConditions": "",
+      "status": "CONVERTED",
+      "emailRecipients": [],
+      "createdAt": "2026-02-06T08:42:12.794Z",
+      "updatedAt": "2026-02-06T08:43:02.965Z",
+      "createdBy": "Admin User",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-06T08:42:12.794Z",
+          "action": "created",
+          "description": "Quote created for ₹15,750",
+          "user": "Admin User"
+        },
+        {
+          "id": "2",
+          "timestamp": "2026-02-06T08:42:52.773Z",
+          "action": "updated",
+          "description": "Quote has been updated",
+          "user": "Admin User"
+        },
+        {
+          "id": "3",
+          "timestamp": "2026-02-06T08:43:02.965Z",
+          "action": "converted",
+          "description": "Converted to Sales Order SO-00001",
+          "user": "Admin User",
+          "link": "/sales-orders/1770367382966"
+        }
+      ],
+      "updatedBy": "Admin User",
+      "attachments": [],
+      "convertedTo": "sales-order"
+    },
+    {
+      "id": "11",
+      "quoteNumber": "REQ-000011",
+      "customerId": "4",
+      "organizationId": "1",
+      "date": "2026-02-16T08:49:43.911Z",
+      "status": "Requested",
+      "items": [
+        {
+          "name": "Mac",
+          "quantity": 3,
+          "description": "sffd"
+        }
+      ],
+      "total": 0,
+      "createdAt": "2026-02-16T08:49:43.911Z"
+    },
+    {
+      "id": "13",
+      "quoteNumber": "REQ-000013",
+      "customerId": "4",
+      "organizationId": "1",
+      "date": "2026-02-16T09:01:03.815Z",
+      "status": "Approved",
+      "items": [
+        {
+          "name": "Laptop",
+          "quantity": 2,
+          "description": ""
+        },
+        {
+          "name": "digital bharat ",
+          "quantity": 1,
+          "description": ""
+        }
+      ],
+      "total": 0,
+      "createdAt": "2026-02-16T09:01:03.815Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-16T11:43:05.230Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T11:43:05.230Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00011",
+          "user": "Admin User",
+          "link": "/invoices/1771242185230"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "quoteNumber": "QT-000014",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "Bhumkar chowk, Pune",
+        "city": "",
+        "state": "",
+        "country": "",
+        "pincode": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-16T09:41:24.649Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "Mac",
+          "description": "sffd",
+          "quantity": 1,
+          "rate": 1200000,
+          "amount": 1200000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 1215000,
+      "total": 1215000,
+      "createdAt": "2026-02-16T09:41:24.649Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-16T11:44:42.613Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T11:44:42.613Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00012",
+          "user": "Admin User",
+          "link": "/invoices/1771242282613"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "quoteNumber": "QT-000015",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-16T10:44:13.207Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        }
+      ],
+      "subTotal": 15000,
+      "total": 15000,
+      "createdAt": "2026-02-16T10:44:13.207Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-16T11:52:57.740Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T11:52:57.740Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00013",
+          "user": "Admin User",
+          "link": "/invoices/1771242777740"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "quoteNumber": "QT-000016",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-16T12:18:22.975Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 3,
+          "rate": 12000,
+          "amount": 36000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 36000,
+      "total": 36000,
+      "createdAt": "2026-02-16T12:18:22.975Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-16T12:19:12.624Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-16T12:19:12.624Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00014",
+          "user": "Admin User",
+          "link": "/invoices/1771244352624"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "quoteNumber": "QT-000017",
+      "customerId": "4",
+      "customerName": "Ganesh",
+      "billingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "shippingAddress": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "country": "India",
+        "pincode": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-16T12:18:23.929Z",
+      "status": "Scrapped",
+      "items": [
+        {
+          "id": "1",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 3,
+          "rate": 12000,
+          "amount": 36000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 36000,
+      "total": 36000,
+      "createdAt": "2026-02-16T12:18:23.929Z"
+    },
+    {
+      "id": "18",
+      "quoteNumber": "QT-000018",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892"
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892"
+      },
+      "organizationId": "1",
+      "date": "2026-02-17T07:57:48.745Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 5,
+          "rate": 12000,
+          "amount": 60000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 75000,
+      "total": 75000,
+      "createdAt": "2026-02-17T07:57:48.745Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-17T07:58:39.660Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-17T07:58:39.660Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00015",
+          "user": "Admin User",
+          "link": "/invoices/1771315119660"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "quoteNumber": "QT-000019",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-17T08:49:31.628Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 2,
+          "rate": 15000,
+          "amount": 30000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 1,
+          "rate": 12000,
+          "amount": 12000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 42000,
+      "total": 42000,
+      "createdAt": "2026-02-17T08:49:31.628Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-17T08:50:05.236Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-17T08:50:05.236Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00016",
+          "user": "Admin User",
+          "link": "/invoices/1771318205236"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "quoteNumber": "QT-000020",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "organizationId": "1",
+      "date": "2026-02-17T09:43:32.860Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 2,
+          "rate": 15000,
+          "amount": 30000,
+          "unit": "set"
+        }
+      ],
+      "subTotal": 30000,
+      "total": 30000,
+      "createdAt": "2026-02-17T09:43:32.860Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-17T09:45:33.414Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-17T09:45:33.414Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00017",
+          "user": "Admin User",
+          "link": "/invoices/1771321533414"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "quoteNumber": "QT-000021",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-17T10:41:00.947Z",
+      "status": "Draft",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 2,
+          "rate": 12000,
+          "amount": 24000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 39000,
+      "total": 39000,
+      "createdAt": "2026-02-17T10:41:00.947Z"
+    },
+    {
+      "id": "22",
+      "quoteNumber": "QT-000022",
+      "customerId": "2",
+      "customerName": "Mr. Ganesh K",
+      "billingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "shippingAddress": {
+        "street": "Guruji chowwk, near demart",
+        "city": "Nanded",
+        "state": "MH",
+        "country": "India",
+        "pincode": "431892",
+        "attention": "",
+        "phone": "",
+        "fax": ""
+      },
+      "organizationId": "1",
+      "date": "2026-02-17T10:44:22.178Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "books",
+          "description": "efsg",
+          "quantity": 3,
+          "rate": 100,
+          "amount": 300,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 300,
+      "total": 300,
+      "createdAt": "2026-02-17T10:44:22.178Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-17T10:44:53.642Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-17T10:44:53.642Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00018",
+          "user": "Admin User",
+          "link": "/invoices/1771325093643"
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "quoteNumber": "QT-000023",
+      "customerId": "1",
+      "customerName": "Mr. Sujay Palande",
+      "billingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "shippingAddress": {
+        "street": "Hinjewadi  pune",
+        "city": "pune",
+        "state": "maharasta ",
+        "country": "India",
+        "pincode": "413104"
+      },
+      "organizationId": "1",
+      "date": "2026-02-18T04:51:02.558Z",
+      "status": "Approved",
+      "items": [
+        {
+          "id": "1",
+          "name": "Laptop",
+          "description": "",
+          "quantity": 1,
+          "rate": 15000,
+          "amount": 15000,
+          "unit": "set"
+        },
+        {
+          "id": "2",
+          "name": "digital bharat ",
+          "description": "",
+          "quantity": 1,
+          "rate": 12000,
+          "amount": 12000,
+          "unit": "pcs"
+        }
+      ],
+      "subTotal": 27000,
+      "total": 27000,
+      "createdAt": "2026-02-18T04:51:02.558Z",
+      "convertedTo": "invoice",
+      "updatedAt": "2026-02-18T04:51:49.460Z",
+      "activityLogs": [
+        {
+          "id": "1",
+          "timestamp": "2026-02-18T04:51:49.460Z",
+          "action": "converted",
+          "description": "Converted to Invoice INV-00019",
+          "user": "Admin User",
+          "link": "/invoices/1771390309460"
+        }
+      ]
+    }
+  ],
+  "nextQuoteNumber": 24
+}
